@@ -1,0 +1,36 @@
+body {
+  margin: 0px;
+  font-family: "Jost", sans-serif;
+}
+
+.modavo {
+  width: 20%;
+}
+
+.header {
+  background: #67c3ea;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: -1px 7px 26px 2px rgba(0, 0, 0, 0.66);
+  -webkit-box-shadow: -1px 7px 26px 2px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: -1px 7px 26px 2px rgba(0, 0, 0, 0.66);
+}
+
+.menu,
+a {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 20px;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: blueviolet;
+}
+
+.login {
+  padding: 20px;
+}
