@@ -5,10 +5,11 @@ body {
 
 .modavo {
   width: 20%;
+  margin-top: 15px;
 }
 
 .header {
-  background: #67c3ea;
+  background: #ca1c2a;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,4 +35,85 @@ a:hover {
 
 .login {
   padding: 20px;
+}
+
+.logo-footer {
+  display: flex;
+}
+
+placeholder {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.cpaas {
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+}
+
+.cpaas2 {
+  font-size: 22px;
+  color: white;
+  display: flex;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  background-color: #0062a2;
+  padding: 22px;
+  border-radius: 8px;
+}
+
+.imagens-cpaas {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.usos {
+  font-size: 28px;
+  text-align: center;
+  text-decoration-line: underline;
+}
+
+.localizacoes {
+  font-size: 28px;
+  text-decoration-line: underline;
+  text-align: center;
+}
+
+.mapa-telecall {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.telecall-titulo {
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  margin-top: 10px;
+  text-decoration-line: underline;
+}
+
+.telecall-texto {
+  font-size: 22px;
+  color: white;
+  display: flex;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  background-color: #0062a2;
+  padding: 22px;
+  border-radius: 8px;
 }
