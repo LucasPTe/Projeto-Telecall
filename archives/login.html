@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Modavo</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/archives/style_login.css">
     <link rel="shortcut icon" href="/archives/telecall.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,13 +15,18 @@
 </head>
 
 <body>
-    <p><a href="/index.html">Voltar</a></p>
-
+    <section>
+        <p><a href="/index.html">Voltar</a></p>
+        <h1>Faça Login</h1>
+        <p>Não tem login? <a href="/archives/cadastro.html">cadastre-se</a></p>
+    </section>
+    <!--Área de Login-->
     <form class="login">
-        <label for="email">Insira seu e-mail</label><br>
-        <input type="email" name="email"><br><br>
+        <label for="text">Insira seu login</label><br>
+        <input type="text" name="login" minlength="6" maxlength="6" required><br><br>
         <label for="password">Insira sua senha</label><br>
-        <input type="password" name="password">
+        <input type="password" name="password" minlength="8" maxlength="8"><br><br>
+        <input type="submit" value="Enviar">
     </form>
 </body>
 
