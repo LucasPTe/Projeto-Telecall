@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Modavo</title>
-    <link rel="stylesheet" href="/archives/style_login.css">
+    <link rel="stylesheet" href="/Tela inicial/archives/telecall.png">
     <link rel="shortcut icon" href="/archives/telecall.png" type="image/x-icon">
     <link rel="stylesheet" href="style_cadastro.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,52 +16,60 @@
 
 <body>
     <section>
-        <p><a href="/Tela inicial/index.html">Voltar</a></p>
-        <h1>Cadastre-se</h1> <a href="cadastro.html"></a>
-        <p>Já possui login? <a href="/Login/login.html">Faça login</a></p>
+
     </section>
     <!--Área de Cadastro-->
     <div class="dados">
-        <form class="login">
-            <label for="nome">Nome Completo</label><br>
-            <input type="text" name="nome" minlength="15" maxlength="60" required><br><br>
+        <form class="form_cadastro">
 
-            <label for="nascimento">Data de Nascimento</label><br>
-            <input type="date" name="data de nascimento" required><br><br>
+            <p><a href="/Tela inicial/index.html">Voltar à tela inicial</a></p>
+            <h1>Cadastre-se</h1> <a href="cadastro.html"></a>
+            <p>Já possui login? <a href="/Login/login.html">Faça login</a></p>
 
-            <!--Seletor de SEXO-->
-            <label for="Sexo" id="sexo_seletor" name="sexo" value="Sexo">Sexo</label><br>
-            <input type="radio" id="html" name="sexo" value="Masculino" required>
-            <label for="Masculino">Masculino</label><br>
-            <input type="radio" id="css" name="sexo" value="CSS" required>
-            <label for="css">Feminino</label><br>
-            <input type="radio" id="nao_informar" name="sexo" value="n_informar" required>
-            <label for="n_informar">Prefiro não informar</label><br>
-            <br>
+            <div class="row-1">
+                <label for="nome">Nome Completo</label><br>
+                <input type="text" name="nome" minlength="15" maxlength="60" required><br><br>
 
-            <label for="mae_nome">Nome da mãe</label><br>
-            <input type="text" name="nome da mãe"><br><br>
+                <label for="nascimento">Data de Nascimento</label><br>
+                <input type="date" name="data de nascimento" required><br><br>
 
-            <label for="CPF">CPF</label><br>
-            <input type="text" name="CPF" placeholder="123.456.789-09" required><br><br>
+                <!--Seletor de SEXO-->
+                <label for="Sexo" id="sexo_seletor" name="sexo" value="Sexo">Sexo</label><br>
+                <input type="radio" id="html" name="sexo" value="Masculino" required>
+                <label for="Masculino">Masculino</label><br>
+                <input type="radio" id="css" name="sexo" value="CSS" required>
+                <label for="css">Feminino</label><br>
+                <input type="radio" id="nao_informar" name="sexo" value="n_informar" required>
+                <label for="n_informar">Prefiro não informar</label><br>
+                <br>
 
-            <label for="tel_Celular">Telefone Celular</label><br>
-            <input type="tel" name="telefone celular" placeholder="(+55)XX-XXXXXXXX" required><br><br>
+                <!--Nome da mãe-->
+                <label for="mae_nome">Nome da mãe</label><br>
+                <input type="text" name="nome da mãe"><br><br>
 
-            <label for="tel_fixo">Telefone Fixo</label><br>
-            <input type="tel" name="telefone fixo" placeholder="(+55)XX-XXXXXXX" required><br><br>
+                <label for="CPF">CPF</label><br>
+                <input type="text" name="CPF" placeholder="123.456.789-09" required><br><br>
+            </div>
 
-            <label for="endereco">Endereço Completo</label><br>
-            <input type="text" name="endereço completo" placeholder="Rua Annibal Nº XXX" required><br><br>
+            <div class="row-2">
+                <label for="tel_Celular">Telefone Celular</label><br>
+                <input type="tel" name="telefone celular" placeholder="(+55)XX-XXXXXXXX" required><br><br>
 
-            <label for="text">Insira o Login</label><br>
-            <input type="email" name="email" minlength="6" maxlength="6" required placeholder="(6 caracteres)"><br><br>
+                <label for="tel_fixo">Telefone Fixo</label><br>
+                <input type="tel" name="telefone fixo" placeholder="(+55)XX-XXXXXXX" required><br><br>
 
-            <label for="password">Insira sua senha</label><br>
-            <input type="password" name="password" required minlength="8" maxlength="8"><br><br>
+                <label for="endereco">Endereço Completo</label><br>
+                <input type="text" name="endereço completo" placeholder="Rua Annibal Nº XXX" required><br><br>
 
-            <label for="password">Repita sua senha</label><br>
-            <input type="password" name="password" required minlength="8" maxlength="8"><br><br>
+                <label for="text">Insira o usuário</label><br>
+                <input type="text" name="usuário" minlength="6" maxlength="6" required placeholder="(6 caracteres)"><br><br>
+
+                <label for="password">Insira sua senha</label><br>
+                <input type="password" name="password" required minlength="8" maxlength="8"><br><br>
+
+                <label for="password">Repita sua senha</label><br>
+                <input type="password" name="password" required minlength="8" maxlength="8"><br><br>
+            </div>
 
             <input type="submit" value="Registrar">
         </form>

@@ -8,7 +8,7 @@ body {
 }
 
 .login {
-  display: flex;
+  display: block;
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -27,4 +27,17 @@ body {
 
 .caixa_senha {
   margin-top: -15px;
+}
+
+.cadastro {
+  text-decoration: none;
+  color: aliceblue;
+}
+a.cadastro:hover {
+  color: blue;
+}
+
+.voltar {
+  text-decoration: none;
+  color: aliceblue;
 }
