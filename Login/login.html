@@ -8,7 +8,7 @@
     <title>Login - Modavo</title>
     <link rel="stylesheet" href="/archives/style_login.css">
     <link rel="shortcut icon" href="/archives/telecall.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
@@ -16,17 +16,18 @@
 
 <body>
     <section>
-        <p><a href="/index.html">Voltar</a></p>
-        <h1>Faça Login</h1>
-        <p>Não tem login? <a href="/archives/cadastro.html">cadastre-se</a></p>
+        <p><a href="/Tela inicial/index.html">Voltar</a></p>
     </section>
     <!--Área de Login-->
+    <img src="/Tela inicial/archives/Screenshot_2-removebg-preview.png">
     <form class="login">
+        <h2 class="login_titulo">Acesse sua conta</h2>
         <label for="text">Insira seu login</label><br>
-        <input type="text" name="login" minlength="6" maxlength="6" required><br><br>
+        <input type="text" name="login" minlength="6" maxlength="6" required class="caixa_login"><br><br>
         <label for="password">Insira sua senha</label><br>
-        <input type="password" name="password" minlength="8" maxlength="8"><br><br>
-        <input type="submit" value="Enviar">
+        <input type="password" name="password" minlength="8" maxlength="8" class="caixa_senha"><br><br>
+        <input type="submit" value="Entrar">
+        <p class="pergunta_login">Ainda não possui conta? <a href="/Login/cadastro.html">Cadastre-se</a></p>
     </form>
 </body>
 
