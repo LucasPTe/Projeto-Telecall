@@ -47,6 +47,9 @@ placeholder {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+#modavo {
+  width: 30%;
+}
 
 #cpaas {
   font-size: 28px;
@@ -95,6 +98,7 @@ placeholder {
   margin-left: auto;
   margin-right: auto;
   width: 60%;
+  border-radius: 20 px;
 }
 
 .telecall-titulo {
@@ -163,6 +167,17 @@ placeholder {
   margin-left: auto;
   margin-right: auto;
   width: 20%;
+  border-radius: 10%;
+}
+.celular2 {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 24%;
+  border-radius: 10%;
+}
+#images {
+  text-align: center;
 }
 
 .footer {
@@ -178,7 +193,7 @@ placeholder {
   background-color: #31353b;
   color: aliceblue;
   border-radius: 6px;
-  padding: px;
+  padding: 1px;
   font-family: "Jost", sans-serif;
   border: 2px solid;
 }
@@ -188,4 +203,21 @@ placeholder {
 .col-4 {
   padding: 100px;
   color: white;
+}
+
+.link {
+  margin-left: 0%;
+}
+
+#copyright {
+  text-align: center;
+  color: #161616;
+  background: #212327;
+  margin: auto;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+#mapa {
+  border-radius: 20px;
 }
