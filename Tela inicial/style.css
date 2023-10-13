@@ -52,6 +52,7 @@ placeholder {
   font-size: 28px;
   display: flex;
   justify-content: center;
+  margin: 5px;
 }
 
 .cpaas2 {
@@ -134,4 +135,57 @@ placeholder {
   gap: 30px;
   margin-left: auto;
   margin-right: auto;
+}
+
+#subtitulo {
+  font-size: 18px;
+  text-align: center;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+.botao {
+  text-align: center;
+  margin-left: 860px;
+}
+
+.butao {
+  background-color: #0062a2;
+  color: aliceblue;
+  border-radius: 20px;
+  padding: 12px;
+  font-family: "Jost", sans-serif;
+  border: 2px solid;
+}
+
+.celular {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+.footer {
+  background: #31353b;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.news {
+  background-color: #31353b;
+  color: aliceblue;
+  border-radius: 6px;
+  padding: px;
+  font-family: "Jost", sans-serif;
+  border: 2px solid;
+}
+.col-2,
+.col-1,
+.col-3,
+.col-4 {
+  padding: 100px;
+  color: white;
 }
