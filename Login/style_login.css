@@ -1,24 +1,28 @@
 body {
   font-family: "Jost", sans-serif;
+  height: 81.4vh;
+  background-image: linear-gradient(white, #0062a2);
 }
 
 .login_titulo {
   display: flex;
-  justify-content: center;
+  border-bottom: white;
 }
 
 .login {
-  display: block;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-shadow: 0px 10px 23px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 23px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 23px -4px rgba(0, 0, 0, 0.75);
   align-items: center;
   background-color: #ca1c2a;
+  color: white;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 50px;
   border-radius: 8px;
+  padding-top: 20px;
 }
 
 .caixa_login {
@@ -34,10 +38,55 @@ body {
   color: aliceblue;
 }
 a.cadastro:hover {
-  color: blue;
+  color: #0062a2;
+  border-bottom: 1px solid white;
 }
 
 .voltar {
   text-decoration: none;
-  color: aliceblue;
+  width: 25px;
+  height: 25px;
+  margin-bottom: -10px;
+}
+
+.img_telecall {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 180px;
+  max-width: 275px;
+  max-height: 200px;
+  width: auto;
+  height: auto;
+}
+
+#entrar {
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  background-color: #0062a2;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 7px 20px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#login_titulo {
+  border-bottom: 1px solid white;
+}
+
+input[type="text"],
+input[type="password"] {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  width: 200px;
+  height: 22px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: lightblue;
 }

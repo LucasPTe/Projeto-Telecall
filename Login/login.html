@@ -19,15 +19,19 @@
 
     </section>
     <!--Área de Login-->
-    <img src="/Tela inicial/archives/Screenshot_2-removebg-preview.png">
+    <div>
+        <img class="img_telecall" src="/Tela inicial/archives/Screenshot_2-removebg-preview.png">
+    </div>
     <form class="login">
-        <p><a class="voltar" href="/Tela inicial/index.html">Voltar à tela inicial</a></p>
-        <h2 class="login_titulo">Acesse sua conta</h2>
-        <label for="text">Insira seu login</label><br>
+        <p><a href="/Tela inicial/index.html"><img class="voltar" src="/Tela inicial/archives/seta-esquerda.png" alt="seta para voltar"></a></p>
+        <h2 id="login_titulo" class=" login_titulo">Acesse sua conta</h2>
+        <label for="text">Digite seu login</label><br>
         <input type="text" name="login" minlength="6" maxlength="6" required class="caixa_login"><br><br>
-        <label for="password">Insira sua senha</label><br>
+        <label for="password">Digite sua senha</label><br>
         <input type="password" name="password" minlength="8" maxlength="8" class="caixa_senha"><br><br>
-        <input type="submit" value="Entrar">
+        <div>
+            <input type="submit" value="Entrar" id="entrar">
+        </div>
         <p class="pergunta_login">Ainda não possui conta? <a href="/Login/cadastro.html" class="cadastro">Cadastre-se</a></p>
     </form>
 </body>

@@ -19,12 +19,13 @@
 
     </section>
     <!--Área de Cadastro-->
+    <img class="img_telecall" src="/Tela inicial/archives/Screenshot_2-removebg-preview.png">
     <div class="dados">
         <form class="form_cadastro">
 
-            <p><a href="/Tela inicial/index.html">Voltar à tela inicial</a></p>
-            <h1>Cadastre-se</h1> <a href="cadastro.html"></a>
-            <p>Já possui login? <a href="/Login/login.html">Faça login</a></p>
+            <p> <a href="/Tela inicial/index.html"><img src="/Tela inicial/archives/seta-esquerda.png" alt="seta para voltar" class="voltar"></a></p>
+            <h1 class="cadastro_titulo">Cadastre-se</h1>
+            <p>Já possui conta? <a class="faca_login" href="/Login/login.html">Faça login</a></p>
 
             <div class="row-1">
                 <label for="nome">Nome Completo</label><br>
@@ -37,8 +38,8 @@
                 <label for="Sexo" id="sexo_seletor" name="sexo" value="Sexo">Sexo</label><br>
                 <input type="radio" id="html" name="sexo" value="Masculino" required>
                 <label for="Masculino">Masculino</label><br>
-                <input type="radio" id="css" name="sexo" value="CSS" required>
-                <label for="css">Feminino</label><br>
+                <input type="radio" id="css" name="sexo" value="Feminino" required>
+                <label for="Feminino">Feminino</label><br>
                 <input type="radio" id="nao_informar" name="sexo" value="n_informar" required>
                 <label for="n_informar">Prefiro não informar</label><br>
                 <br>
@@ -71,7 +72,7 @@
                 <input type="password" name="password" required minlength="8" maxlength="8"><br><br>
             </div>
 
-            <input type="submit" value="Registrar">
+            <input id="registar_botao" type="submit" value="Registrar">
         </form>
     </div>
 </body>
