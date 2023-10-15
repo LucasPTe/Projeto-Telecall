@@ -7,30 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Modavo</title>
     <link rel="stylesheet" href="/Tela inicial/archives/telecall.png">
-    <link rel="shortcut icon" href="/archives/telecall.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/Tela inicial/archives/telecall.png" type="image/x-icon">
     <link rel="stylesheet" href="style_login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
 </head>
 
+<!--Área de Login-->
+
 <body>
-    <!--Área de Login-->
-    <div>
-        <img class="img_telecall" src="/Tela inicial/archives/Screenshot_2-removebg-preview.png">
-    </div>
-    <form class="login">
-        <p><a href="/Tela inicial/index.html"><img class="voltar" src="/Tela inicial/archives/seta-esquerda.png" alt="seta para voltar"></a></p>
-        <h2 id="login_titulo" class=" login_titulo">Acesse sua conta</h2>
-        <label for="text">Digite seu login</label><br>
-        <input type="text" name="login" minlength="6" maxlength="6" required class="caixa_login"><br><br>
-        <label for="password">Digite sua senha</label><br>
-        <input type="password" name="password" minlength="8" maxlength="8" class="caixa_senha"><br><br>
-        <div>
-            <input type="submit" value="Entrar" id="entrar">
+    <div id="conteiner_fundo">
+        <div id="conteiner_img_telecall">
+            <img class="img_telecall" src="/Tela inicial/archives/Screenshot_2-removebg-preview.png">
         </div>
-        <p class="pergunta_login">Ainda não possui conta? <a href="/Login/cadastro.html" class="cadastro">Cadastre-se</a></p>
-    </form>
+        <form class="login">
+            <p><a href="/Tela inicial/index.html"><img class="voltar" src="/Tela inicial/archives/seta-esquerda.png" alt="seta para voltar"></a></p>
+            <h2 id="login_titulo" class=" login_titulo">Acesse sua conta</h2>
+            <label for="text">Digite seu login</label><br>
+            <input type="text" name="login" minlength="6" maxlength="6" required class="caixa_login"><br><br>
+            <label for="password">Digite sua senha</label><br>
+            <input type="password" name="password" minlength="8" maxlength="8" class="caixa_senha"><br><br>
+            <div>
+                <input type="submit" value="Entrar" id="entrar">
+            </div>
+            <p class="pergunta_login">Ainda não possui conta? <a href="/Login/cadastro.html" class="cadastro">Cadastre-se</a></p>
+        </form>
+    </div>
 </body>
 
 </html>
