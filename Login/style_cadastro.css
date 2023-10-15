@@ -1,6 +1,11 @@
 body {
   font-family: "Jost", sans-serif;
-  height: 98.4vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: linear-gradient(white, #0062a2);
 }
 
