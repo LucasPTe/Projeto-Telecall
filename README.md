@@ -2,7 +2,7 @@
 
 ## Desenvolvimento do website direcionado para a empresa Telecall
 
-### Tecnologias usadas foram:
+### Tecnologias que foram usadas:
 
 - HTML para a criação e inserção de elementos na página
 - CSS para a estilização dos componentes
