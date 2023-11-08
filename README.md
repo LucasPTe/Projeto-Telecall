@@ -1,6 +1,6 @@
 # Criação do site Telecall.
 
-## Desenvolvimento do website direcionado para a empresa telecall
+## Desenvolvimento do website direcionado para a empresa Telecall
 
 ### Tecnologias usadas foram:
 
