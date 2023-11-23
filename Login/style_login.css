@@ -97,3 +97,8 @@ input[type="text"]:focus,
 input[type="password"]:focus {
   background-color: lightblue;
 }
+
+#botao_voltar a {
+  text-decoration: none;
+  color: #fff;
+}

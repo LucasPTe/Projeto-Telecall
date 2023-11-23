@@ -2,8 +2,16 @@
 $("#cpf").mask("000.000.000-00", { reverse: true });
 
 // Formatacao numeros de telefone
-$("#tel_celular").mask("(00) 00000-0000");
-$("#tel_fixo").mask("(00) 0000-0000");
+$("#celular").mask("(00) 00000-0000");
+$("#fixo").mask("(00) 0000-0000");
+
+// Voltar
+
+document.getElementById("botao_voltar").addEventListener("click", voltar);
+
+function voltar() {
+  window.location = "";
+}
 
 // Permitir apenas letras no usuario e senha
 function validarLetras(event) {
@@ -18,6 +26,9 @@ function validarLetras(event) {
     event.target.value = valor.replace(/[0-9]/g, "");
   }
 }
+
+let senha = document.querySelector("#senha");
+let ConfirmaSenha = document.querySelector("#confirma_senha");
 
 // Adicione o evento ao input
 document.querySelector("#usuario").addEventListener("input", validarLetras);

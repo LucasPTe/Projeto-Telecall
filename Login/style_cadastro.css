@@ -1,9 +1,14 @@
+body {
+  margin: 0px;
+  font-family: "Jost", sans-serif;
+}
+
 .box-area {
-  width: 930px;
+  width: 600px;
 }
 
 .right-box {
-  padding: 40px 30px 40px 40px;
+  padding: 10px;
 }
 
 ::placeholder {
@@ -23,4 +28,39 @@
   .right-box {
     padding: 20px;
   }
+}
+
+.botao_voltar {
+  color: #fff;
+  background-color: #0062a2;
+  font-size: 16px;
+}
+
+.botao_cadastro {
+  margin-top: -20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  background-color: #0062a2;
+  font-size: 18px;
+}
+
+.cadastro_titulo {
+  color: #0062a2;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.sexo_titulo {
+  margin-bottom: 0px;
+}
+
+#botao_voltar a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  background-image: linear-gradient(white, #0062a2);
 }
