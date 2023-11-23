@@ -17,71 +17,54 @@
 </head>
 
 <body>
-    <!--Área de Cadastro-->
-    <img class="img_telecall" src="/Tela inicial/archives/Screenshot_2-removebg-preview.png">
-    <div class="dados">
-        <form class="form_cadastro">
-
-            <p> <a href="/Tela inicial/index.html"><img src="/Tela inicial/archives/seta-esquerda.png" alt="seta para voltar" class="voltar"></a></p>
-            <h1 class="cadastro_titulo">Cadastre-se</h1>
-            <p>Já possui conta? <a class="faca_login" href="/Login/login.html">Faça login</a></p>
-
-            <div class="row-1">
-                <label for="nome">Nome Completo</label><br>
-                <input type="text" name="nome" minlength="15" maxlength="60" required><br><br>
-
-                <label for="nascimento">Data de Nascimento</label><br>
-                <input type="date" name="data de nascimento" required><br><br>
-
-                <!--Seletor de SEXO-->
-                <label for="Sexo" id="sexo_seletor" name="sexo" value="Sexo">Sexo</label><br>
-                <input type="radio" id="html" name="sexo" value="Masculino" required>
-                <label for="Masculino">Masculino</label><br>
-                <input type="radio" id="css" name="sexo" value="Feminino" required>
-                <label for="Feminino">Feminino</label><br>
-                <input type="radio" id="nao_informar" name="sexo" value="n_informar" required>
-                <label for="n_informar">Prefiro não informar</label><br>
-                <br>
-
-                <!--Nome da mãe-->
-                <label for="mae_nome">Nome da mãe</label><br>
-                <input type="text" name="nome da mãe"><br><br>
-
-
-                <label for="CPF">CPF</label><br>
-                <input id="cpf" placeholder="123.456.789-09" type="text" required maxlength="14"><br><br>
-
-
-            </div>
-
-            <div class="row-2">
-                <label for="tel_Celular">Telefone Celular</label><br>
-                <input id="tel_celular" type="tel" name="telefone celular" placeholder="XX-XXXXXXXXX" required><br><br>
-
-                <label for="tel_fixo">Telefone Fixo</label><br>
-                <input id="tel_fixo" type="tel" name="telefone fixo" placeholder="XX-XXXXXXX" required><br><br>
-
-                <label for="endereco">Endereço Completo</label><br>
-                <input type="text" name="endereço completo" placeholder="Rua Annibal Nº XXX" required><br><br>
-
-                <label for="text">Insira o usuário</label><br>
-                <input id="usuario" type="text" name="usuário" minlength="6" maxlength="6" required placeholder="(6 caracteres apenas letras)"><br><br>
-
-                <label for="password">Insira sua senha</label><br>
-                <input id="senha" type="password" name="password" placeholder="(8 caracteres apenas letras)" required minlength="8" maxlength="8"><br><br>
-
-                <label for="password">Repita sua senha</label><br>
-                <input id="senha" type="password" name="password" placeholder="(8 caracteres apenas letras)" required minlength="8" maxlength="8"><br><br>
-            </div>
-
-            <button onclick='cadastrar()' id="registar_botao">Registrar</button>
-        </form>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js" integrity="sha512-0XDfGxFliYJPFrideYOoxdgNIvrwGTLnmK20xZbCAvPfLGQMzHUsaqZK8ZoH+luXGRxTrS46+Aq400nCnAT0/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="cadastro.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--Main Container-->
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
 
+
+        <!--Login Container-->
+
+        <div class="row border rounded-5 p-3 bg-white shadow box-area">
+
+
+            <!--Left Box-->
+
+            <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box" style="background: #103cbe">
+                <div class="featured-image mb-3">
+                    <img src="/Tela inicial/archives/Call Center.png" class="img-fluid" style="width: 250px" alt="aaaa">
+                </div>
+                <p class="text-white fs-2">Be Verified</p>
+                <small class="text-white text-wrap text-center" style="width: 17rem;">Join experienced designer on this paltform</small>
+            </div>
+
+            <!--Right Box-->
+            <div class="col-md-6 right-box">
+                <div class="row align-items-center">
+                    <div class="header-text mb-4">
+                        <p>Hello, again</p>
+                        <p>We are happy to have you back.</p>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Email address">
+                    </div>
+                    <div class="input-group mb-1">
+                        <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Password">
+                    </div>
+                    <div class="input-group mb-5 d-flex justify-content-between">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="formCheck">
+                            <label for="formCheck" class="form-cherk-label text-secondary"><small>Remember Me</small></label>
+                        </div>
+                        <div class="forgot">
+                            <small><a href="#">Forgot Password?</a></small>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <button class="btn btn-lg btn-primary w-100 fs-6">Login</button>
+                    </div>
+                </div>
+
+            </div>
 </body>
 
 </html>
