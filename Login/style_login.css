@@ -102,3 +102,8 @@ input[type="password"]:focus {
   text-decoration: none;
   color: #fff;
 }
+
+#botao_cadastrar {
+  text-decoration: none;
+  color: #fff;
+}

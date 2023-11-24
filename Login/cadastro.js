@@ -7,8 +7,6 @@ $("#fixo").mask("(00) 0000-0000");
 
 // Voltar
 
-document.getElementById("botao_voltar").addEventListener("click", voltar);
-
 function voltar() {
   window.location = "";
 }
@@ -28,11 +26,14 @@ function validarLetras(event) {
 }
 
 let senha = document.querySelector("#senha");
-let ConfirmaSenha = document.querySelector("#confirma_senha");
+let ConfirmaSenha = document.querySelector("#confirmar_senha");
 
 // Adicione o evento ao input
 document.querySelector("#usuario").addEventListener("input", validarLetras);
 document.querySelector("#senha").addEventListener("input", validarLetras);
+document
+  .querySelector("#confirmar_senha")
+  .addEventListener("input", validarLetras);
 
 function cadastrar() {
   window.alert("Cadastro concluído!");
