@@ -6,92 +6,276 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Telecall</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="shortcut icon" href="/Tela inicial/archives/telecall.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Tela inicial/sobre.css">
+
 </head>
 
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Navbar -->
     <header>
-        <nav>
-            <div class="header">
-                <img class="modavo" src="/Tela inicial/archives/telecallnav.png" alt="Logo Modavo">
-                <ul class="menu">
-                    <li><a href="/Tela inicial/index.html">Início</a></li>
-                    <li><a href="/Tela inicial/cpaas.html">Cpaas</a></li>
-                    <li><a href="/Tela inicial/2FA.html">2FA</a></li>
-                    <li><a href="/Tela inicial/numero_mascara.html">Número Máscara</a></li>
-                    <li><a href="/Tela inicial/google.html">Google Verified Calls </a></li>
-                    <li><a href="/Tela inicial/sms.html">SMS</a></li>
-                    <li><a href="/Login/login.html">Área do Cliente</a></li>
-                </ul>
+        <nav class="navbar bg-body-tertiary navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand me-auto" href="/Tela inicial/index.html"><img src="/Tela inicial/archives/modavo_logo.png" id="logo_navbar" class="img-fluid" alt="Logo_Modavo"></a>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active mx-lg-2" aria-current="page" href="/Tela inicial/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="/Tela inicial/sobre.html">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="#">CPaaS</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Serviços
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/Tela inicial/2FA.html">2FA</a></li>
+                                    <li><a class="dropdown-item" href="/Tela inicial/numero_mascara.html">Número Máscara</a></li>
+                                    <li><a class="dropdown-item" href="/Tela inicial/google.html">Google Verified Calls</a></li>
+                                    <li><a class="dropdown-item" href="/Tela inicial/sms.html">SMS</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="#" class="login-button">Área do Cliente</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
         </nav>
-    </header>
 
-    <h2 id="mascara" class="usos">Número Máscara: O que é?</h2>
-    <figure>
-        <img class="img_2fa" src="/Tela inicial/archives/mascara.png">
-    </figure>
-    <span class="cpaas2"> Fortaleça a estratégia de segurança de seu negócio. Adicionar um número de telefone de recuperação a uma conta individual pode bloquear até: 100% dos bots automatizados, 99% dos ataques de phishing em massa, e 66% dos ataques direcionados.</span><br>
+        <!-- Fim Navbar -->
 
-    <h2 class="usos">Como funciona?</h2>
-    <figure>
-        <img class="img_2fa" src="/Tela inicial/archives/mascara2.png">
-    </figure>
-
-    <h2 class="usos">Para que usam?</h2>
-    <figure>
-        <img class="img_2fa" src="/Tela inicial/archives/quemusa2.png">
-    </figure>
-
-    <h2 class="usos">Quem usa?</h2>
-    <figure>
-        <img class="img_2fa" src="/Tela inicial/archives/parceiros2.png">
-    </figure>
-
-    <h2 class="usos">Quem mais pode usar?</h2>
-    <figure>
-        <img class="img_2fa" src="/Tela inicial/archives/quemaispodeusar.png">
-    </figure>
-
-    <h2 class="usos">Recursos avançados</h2>
-    <figure>
-        <img class="img_2fa" src="/Tela inicial/archives/recavancados.png">
-    </figure>
-    <footer>
-        <div class="footer">
-            <div class="col-1">
-                <h3>Empresa</h3>
-                <a class="link" href="https://telecall.com/institucional/?_gl=1*1loz4t6*_ga*MTcyMzc2MjQ5Ni4xNjk1ODUyNTIw*_ga_MDDSN8Q5HF*MTY5NzE2NTg2Ni4xNS4xLjE2OTcxNjkxMTUuMC4wLjA.*_ga_V9EJZGZCD5*MTY5NzE2OTA4OS4xNy4wLjE2OTcxNjkxMTUuMzQuMC4w" target="_blank">Quem somos</a>
-                <a class="link" href="https://telecall.com/" target="_blank">Nossos serviços</a>
-                <a class="link" href="https://telecall.com/politica-e-privacidade/?_gl=1*1vex15n*_ga*MTcyMzc2MjQ5Ni4xNjk1ODUyNTIw*_ga_MDDSN8Q5HF*MTY5NzE2NTg2Ni4xNS4xLjE2OTcxNjkzMzcuMC4wLjA.*_ga_V9EJZGZCD5*MTY5NzE2OTA4OS4xNy4xLjE2OTcxNjkzMzcuNjAuMC4w" target="_blank">Política de privacidade</a>
-                <a class="link" href="https://carreirastelecall.solides.jobs/" target="_blank">Carreiras</a>
+        <!-- Seção Sobre-->
+        <section class="d-flex allign-items-center h-75 home_2fa">
+            <div class="container distancia_navbar">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-6">
+                        <h1 class="titulo_landing">Número Máscara</h1>
+                        <h3 class="subtitle_landing_ita">Proteja identidades profissionais</h3>
+                        <p class="texto_landing">Garanta aos seus clientes a capacidade de fazer chamadas e enviar
+                            mensagens sem expor seus números de telefone pessoais.</p>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-end">
+                        <img src="/Tela inicial/n_mascara_img/Número mascara.png" class="img-fluid w-90" alt="modavo_solucoes">
+                    </div>
+                </div>
             </div>
-            <div class="col-2">
-                <h3>Obter Ajuda</h3>
-                <a class="link" href="https://telecall.com/faq/?_gl=1*d1rge6*_ga*MTcyMzc2MjQ5Ni4xNjk1ODUyNTIw*_ga_MDDSN8Q5HF*MTY5NzE2NTg2Ni4xNS4xLjE2OTcxNjkyODAuMC4wLjA.*_ga_V9EJZGZCD5*MTY5NzE2OTA4OS4xNy4xLjE2OTcxNjkyODAuMzAuMC4w" target="_blank">FAQ</a>
-                <a class="link" href="https://telecall.com/contato/?_gl=1*d1rge6*_ga*MTcyMzc2MjQ5Ni4xNjk1ODUyNTIw*_ga_MDDSN8Q5HF*MTY5NzE2NTg2Ni4xNS4xLjE2OTcxNjkyODAuMC4wLjA.*_ga_V9EJZGZCD5*MTY5NzE2OTA4OS4xNy4xLjE2OTcxNjkyODAuMzAuMC4w" target="_blank">Contato</a>
-            </div>
-            <div class="col-3">
-                <h3>Internet</h3>
-                <a class="link" href="https://telecall.com/#depoimentos" target="_blank">Internet Dedicada</a>
-                <a class="link" href="https://telecall.com/banda-larga/?_gl=1%2A15225yh%2A_ga%2AMTcyMzc2MjQ5Ni4xNjk1ODUyNTIw%2A_ga_MDDSN8Q5HF%2AMTY5NzE2NTg2Ni4xNS4xLjE2OTcxNjkyNTAuMC4wLjA.%2A_ga_V9EJZGZCD5%2AMTY5NzE2OTA4OS4xNy4xLjE2OTcxNjkyNTAuNjAuMC4w" target="_blank">Banda Larga</a>
-                <a class="link" href="https://www.telecall.com/internet/wi-fi/?_gl=1*mp1x84*_ga*MTcyMzc2MjQ5Ni4xNjk1ODUyNTIw*_ga_MDDSN8Q5HF*MTY5NzE2NTg2Ni4xNS4xLjE2OTcxNjkyNjcuMC4wLjA.*_ga_V9EJZGZCD5*MTY5NzE2OTA4OS4xNy4xLjE2OTcxNjkyNjcuNDMuMC4w" target="_blank">Wi-fi</a>
-            </div>
-            <div class="col-4">
-                <h3>Assine nosso Newsletter</h3>
-                <form>
-                    <input class="news" type="email" placeholder="Insira seu e-mail">
-                    <button class="news" type="submit">Enviar</button><br>
-                </form>
-            </div>
+        </section>
 
-        </div>
-        <h3 id="copyright">Copyright © 2018 Telecall. Todos os direitos reservados. </h3>
-    </footer>
+        <!-- FIM Seção Sobre-->
+
+        <!-- Info adicionais-->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 cards pb-3">
+                        <div>
+                            <h1 class="d-flex justify-content-center percent">Mascare um número de telefone para interações com mais
+                                privacidade.</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-4 cards pb-3">
+                        <div>
+                            <h1 class="d-flex justify-content-center percent">Permite que empresas façam negócios usando menos
+                                números de telefone.</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-4 cards pb-3">
+                        <div>
+                            <h1 class="d-flex justify-content-center percent">Oferece uma experiência mais segura e profissional.</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FIM Info adicionais-->
+
+        <!-- Como funciona-->
+        <section>
+            <div class="container">
+                <h2 class="text-center pt-5 pb-3 como_funciona_nm">Como funciona ?</h2>
+                <div class="row">
+                    <div class="col-md-4 cards pb-3">
+                        <div>
+                            <p class="card-text text-center como_funciona_text">Usuário faz uma chamada através de um aplicativo.</p>
+                            <img src="/Tela inicial/n_mascara_img/comofunciona1.png" class="card-img-top como_funciona_img" alt="como_funciona_img1">
+                            <div class="card-body">
+                                <p class="card-text text-center como_funciona_text">Ex: usuário liga para o entregador ou motorista de taxi ou entra em contato com a central de atendimento.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 cards pb-3">
+                        <div>
+                            <p class="card-text text-center como_funciona_text">Plataforma mascara o número original.</p>
+                            <img src="/Tela inicial/n_mascara_img/comofunciona2.png" class="card-img-top como_funciona_img" alt="como_funciona_img2">
+                            <div class="card-body">
+                                <p class="card-text text-center como_funciona_text">A plataforma recebe a chamada e mascara o número antes de conectar com o destinatário.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 cards pb-3">
+                        <div>
+                            <p class="card-text text-center como_funciona_text">Ambas as partes são conectadas.</p>
+                            <img src="/Tela inicial/n_mascara_img/comofunciona3.png" class="card-img-top como_funciona_img" alt="como_funciona_img3">
+                            <div class="card-body">
+                                <p class="card-text text-center como_funciona_text">A plataforma conecta ambas as partes mantendo a privacidade dos dois.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FIM Como funciona-->
+
+
+        <!-- quem usa-->
+        <section>
+            <div class="container">
+                <h2 class="text-center pt-5 pb-3 como_funciona_nm">Quem usa ?</h2>
+                <div class="row">
+                    <div class="col-md-3 cards pb-3">
+                        <div>
+                            <img src="/Tela inicial/n_mascara_img/quemusa1.png" class="card-img-top como_funciona_img" alt="como_funciona_img1">
+                            <div class="card-body">
+                                <p class="card-text text-center quem_usa_titutlo_nm">Apps de Transporte</p>
+                                <p class="card-text text-center como_funciona_text">Permite que motorista e passageiro se comuniquem sem compartilhar seus números pessoais.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 cards pb-3">
+                        <div>
+                            <img src="/Tela inicial/n_mascara_img/quemusa2.png" class="card-img-top como_funciona_img" alt="como_funciona_img1">
+                            <div class="card-body">
+                                <p class="card-text text-center quem_usa_titutlo_nm">Apps de Relacionamento</p>
+                                <p class="card-text text-center como_funciona_text">Permite uma maneira privada e segura para usuários interagirem sem expor contatos pessoais.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 cards pb-3">
+                        <div>
+                            <img src="/Tela inicial/n_mascara_img/quemusa3.png" class="card-img-top como_funciona_img" alt="como_funciona_img1">
+                            <div class="card-body">
+                                <p class="card-text text-center quem_usa_titutlo_nm">E-Commerce</p>
+                                <p class="card-text text-center como_funciona_text">Permite que clientes entrem em contato através do aplicativo. Podem também integrar chamadas internacionais.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 cards pb-3">
+                        <div>
+                            <img src="/Tela inicial/n_mascara_img/quemusa4.png" class="card-img-top como_funciona_img" alt="como_funciona_img1">
+                            <div class="card-body">
+                                <p class="card-text text-center quem_usa_titutlo_nm">Entregas e Logística</p>
+                                <p class="card-text text-center como_funciona_text">Mantenha seu cliente informado sobre entregas e serviços, tire dúvidas, etc</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- quem usa fim-->
+
+        <!-- Quem usa2?-->
+        <section class="about pb-5" id="sobre">
+            <div class="container">
+                <h2 class="text-center pb-5 quem_mais" id="porque">Quem mais pode usar?</h2>
+                <div class="row mb-5 pb-5">
+                    <div class="col-xl-7 d-flex align-items-center pd_usar_txt">
+                        <p>No Brasil, 43% das empresas implementaram o Home Office como prática padrão. Para funcionários sem celular empresarial, o uso de um número máscara permanente vinculado ao telefone celular pode proteger suas informações pessoais. Prevê-se um aumento de aproximadamente 30% no modelo de trabalho remoto mesmo após o fim da pandemia. Essa abordagem é benéfica para aqueles sem celular empresarial ou ramal virtual, garantindo a segurança de seus números pessoais.</p>
+                    </div>
+                    <div class="col-xl-5 espaco_entre">
+                        <img src="/Tela inicial/n_mascara_img/pd_usar.png" class="img-fluid" alt="Confiança_Imagem2">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quem usa2? FIM-->
+
+        <!-- footer-->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-box">
+                            <img id="modavo_logo" src="/Tela inicial/archives/modavo_logo.png" alt="">
+
+                            <p> Copyright © 2023 | Telecall. Todos os direitos reservados.</p>
+
+                            <div class="card-area">
+                                <i class="fa fa-cc-visa"></i>
+                                <i class="fa fa-credit-card"></i>
+                                <i class="fa fa-cc-mastercard"></i>
+                                <i class="fa fa-cc-paypal"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-box">
+                            <h2>Hosting</h2>
+                            <ul>
+                                <li><a href="#">Web Hosting</a></li>
+                                <li><a href="#">Cloud Hosting</a></li>
+                                <li><a href="#">CMS Hosting</a></li>
+                                <li><a href="#">WordPress Hosting</a></li>
+                                <li><a href="#">Email Hosting</a></li>
+                                <li><a href="#">VPS Hosting</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-box">
+                            <h2>Domain</h2>
+                            <ul>
+                                <li><a href="#">Web Domain</a></li>
+                                <li><a href="#">Cloud Domain</a></li>
+                                <li><a href="#">CMS Domain</a></li>
+                                <li><a href="#">WordPress Domain</a></li>
+                                <li><a href="#">Email Domain</a></li>
+                                <li><a href="#">VPS Domain</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-box">
+                            <h2>Newsletter</h2>
+                            <p>Insira seu e-mail para receber nossas notícias atualizadas.</p>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="E-mail" aria-label="Enter your Email ..." aria-describedby="basic-addon2">
+                                <span class="input-group-text" id="basic-addon2"><i class="fa fa-long-arrow-right"></i></span>
+                            </div>
+                            <h2>Follow us on</h2>
+                            <p class="socials">
+                                <i class="fa fa-facebook"></i>
+                                <i class="fa fa-dribbble"></i>
+                                <i class="fa fa-pinterest"></i>
+                                <i class="fa fa-twitter"></i>
+                            <div class="ast-footer-copyright">
+                                <p>Copyright © 2023 | Telecall. Todos os direitos reservados.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- footer fim-->
 </body>

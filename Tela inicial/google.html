@@ -6,93 +6,273 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Telecall</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="shortcut icon" href="/Tela inicial/archives/telecall.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Tela inicial/sobre.css">
 
 </head>
 
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Navbar -->
     <header>
-        <nav>
-            <div class="header">
-                <img class="modavo" src="/Tela inicial/archives/telecallnav.png" alt="Logo Modavo">
-                <ul class="menu">
-                    <li><a href="/Tela inicial/index.html">Início</a></li>
-                    <li><a href="/Tela inicial/cpaas.html">Cpaas</a></li>
-                    <li><a href="/Tela inicial/2FA.html">2FA</a></li>
-                    <li><a href="/Tela inicial/numero_mascara.html">Número Máscara</a></li>
-                    <li><a href="/Tela inicial/google.html">Google Verified Calls </a></li>
-                    <li><a href="/Tela inicial/sms.html">SMS</a></li>
-                    <li><a href="/Login/login.html">Área do Cliente</a></li>
-                </ul>
+        <nav class="navbar bg-body-tertiary navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand me-auto" href="/Tela inicial/index.html"><img src="/Tela inicial/archives/modavo_logo.png" id="logo_navbar" class="img-fluid" alt="Logo_Modavo"></a>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active mx-lg-2" aria-current="page" href="/Tela inicial/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="/Tela inicial/sobre.html">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="#">CPaaS</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Serviços
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/Tela inicial/2FA.html">2FA</a></li>
+                                    <li><a class="dropdown-item" href="/Tela inicial/numero_mascara.html">Número Máscara</a></li>
+                                    <li><a class="dropdown-item" href="/Tela inicial/google.html">Google Verified Calls</a></li>
+                                    <li><a class="dropdown-item" href="/Tela inicial/sms.html">SMS</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="#" class="login-button">Área do Cliente</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
         </nav>
-    </header>
 
-    <h2 id="google" class="usos">Google Verified Calls: O que é?</h2>
-    <span class="cpaas2"> Esse novo recurso do Google, exclusivo para telefones Android, permite que empresas exibam para o cliente na hora da chamada sua marca logotipo e até mesmo o motivo da chamada. A Telecall é a primeira operadora de telecom no Brasil a oferecer esse recurso do Google.
-    </span>
+        <!-- Fim Navbar -->
 
-    <h2 id="google" class="usos">O problema:</h2>
-    <figure>
-        <img class="img_google" src="/Tela inicial/archives/O problema.png">
-    </figure>
-    <h2 id="google" class="usos">O que são?</h2>
-    <figure>
-        <img class="img_google" src="/Tela inicial/archives/oquee.png">
-    </figure>
+        <!-- Seção Sobre-->
+        <section class="d-flex allign-items-center h-75 home_2fa">
+            <div class="container distancia_navbar">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-6">
+                        <h1 class="titulo_landing">Google Verified Calls</h1>
+                        <p class="texto_landing">Exclusivo para telefones Android, este novo recurso permite que empresas exibam para o cliente na hora da chamada sua marca, logotipo e até mesmo o motivo da chamada.</p>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-end">
+                        <img src="/Tela inicial/google_img/google_verified.png" class="img-fluid w-90" alt="modavo_solucoes">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <h2 id="google" class="usos">Compatibilidade</h2>
-    <figure>
-        <img class="img_google" src="/Tela inicial/archives/Compatibilidade.png">
-    </figure>
-    <h2 id="google" class="usos">Como funciona?</h2>
-    <figure>
-        <img class="img_google" src="/Tela inicial/archives/Como funciona.png">
-    </figure>
-    <h2 id="google" class="usos">Benefícios</h2>
-    <figure>
-        <img class="img_google" src="/Tela inicial/archives/Beneficios google.png">
-    </figure>
-    <h2 id="google" class="usos">Usos</h2>
-    <figure>
-        <img class="img_google" src="/Tela inicial/archives/Usos google.png">
-    </figure>
-    <br>
-    <footer>
-        <div class="footer">
-            <div class="col-1">
-                <h3>Empresa</h3>
-                <a class="link" href="https://telecall.com/institucional/?_gl=1*1loz4t6*_ga*MTcyMzc2MjQ5Ni4xNjk1ODUyNTIw*_ga_MDDSN8Q5HF*MTY5NzE2NTg2Ni4xNS4xLjE2OTcxNjkxMTUuMC4wLjA.*_ga_V9EJZGZCD5*MTY5NzE2OTA4OS4xNy4wLjE2OTcxNjkxMTUuMzQuMC4w" target="_blank">Quem somos</a>
-                <a class="link" href="https://telecall.com/" target="_blank">Nossos serviços</a>
-                <a class="link" href="https://telecall.com/politica-e-privacidade/?_gl=1*1vex15n*_ga*MTcyMzc2MjQ5Ni4xNjk1ODUyNTIw*_ga_MDDSN8Q5HF*MTY5NzE2NTg2Ni4xNS4xLjE2OTcxNjkzMzcuMC4wLjA.*_ga_V9EJZGZCD5*MTY5NzE2OTA4OS4xNy4xLjE2OTcxNjkzMzcuNjAuMC4w" target="_blank">Política de privacidade</a>
-                <a class="link" href="https://carreirastelecall.solides.jobs/" target="_blank">Carreiras</a>
-            </div>
-            <div class="col-2">
-                <h3>Obter Ajuda</h3>
-                <a class="link" href="https://telecall.com/faq/?_gl=1*d1rge6*_ga*MTcyMzc2MjQ5Ni4xNjk1ODUyNTIw*_ga_MDDSN8Q5HF*MTY5NzE2NTg2Ni4xNS4xLjE2OTcxNjkyODAuMC4wLjA.*_ga_V9EJZGZCD5*MTY5NzE2OTA4OS4xNy4xLjE2OTcxNjkyODAuMzAuMC4w" target="_blank">FAQ</a>
-                <a class="link" href="https://telecall.com/contato/?_gl=1*d1rge6*_ga*MTcyMzc2MjQ5Ni4xNjk1ODUyNTIw*_ga_MDDSN8Q5HF*MTY5NzE2NTg2Ni4xNS4xLjE2OTcxNjkyODAuMC4wLjA.*_ga_V9EJZGZCD5*MTY5NzE2OTA4OS4xNy4xLjE2OTcxNjkyODAuMzAuMC4w" target="_blank">Contato</a>
-            </div>
-            <div class="col-3">
-                <h3>Internet</h3>
-                <a class="link" href="https://telecall.com/#depoimentos" target="_blank">Internet Dedicada</a>
-                <a class="link" href="https://telecall.com/banda-larga/?_gl=1%2A15225yh%2A_ga%2AMTcyMzc2MjQ5Ni4xNjk1ODUyNTIw%2A_ga_MDDSN8Q5HF%2AMTY5NzE2NTg2Ni4xNS4xLjE2OTcxNjkyNTAuMC4wLjA.%2A_ga_V9EJZGZCD5%2AMTY5NzE2OTA4OS4xNy4xLjE2OTcxNjkyNTAuNjAuMC4w" target="_blank">Banda Larga</a>
-                <a class="link" href="https://www.telecall.com/internet/wi-fi/?_gl=1*mp1x84*_ga*MTcyMzc2MjQ5Ni4xNjk1ODUyNTIw*_ga_MDDSN8Q5HF*MTY5NzE2NTg2Ni4xNS4xLjE2OTcxNjkyNjcuMC4wLjA.*_ga_V9EJZGZCD5*MTY5NzE2OTA4OS4xNy4xLjE2OTcxNjkyNjcuNDMuMC4w" target="_blank">Wi-fi</a>
-            </div>
-            <div class="col-4">
-                <h3>Assine nosso Newsletter</h3>
-                <form>
-                    <input class="news" type="email" placeholder="Insira seu e-mail">
-                    <button class="news" type="submit">Enviar</button><br>
-                </form>
-            </div>
+        <!-- FIM Seção Sobre-->
 
-        </div>
-        <h3 id="copyright">Copyright © 2018 Telecall. Todos os direitos reservados. </h3>
-    </footer>
+        <!-- Info adicionais-->
+        <section class="about pb-5" id="sobre">
+            <div class="container">
+                <h2 class="text-center pb-5 quem_mais" id="porque">O problema</h2>
+                <div class="row mb-5 pb-5">
+                    <div class="col-xl-7 d-flex align-items-center pd_usar_txt">
+                        <p>O Brasil lidera globalmente em termos de impacto de chamadas de spam, sofrendo um aumento de 141% desde 2017. Em média, os brasileiros recebem 49,9 ligações indesejadas por mês. Em resposta a essa problemática, 43% das empresas no país adotaram o Home Office como padrão, buscando mitigar o problema e proteger os funcionários. Mesmo após a pandemia, espera-se que o modelo de trabalho remoto cresça em torno de 30%, oferecendo uma solução flexível para o cenário de spam telefônico.</p>
+                    </div>
+                    <div class="col-xl-5 espaco_entre">
+                        <img src="/Tela inicial/google_img/problema_grafico.png" class="img-fluid" alt="Confiança_Imagem2">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FIM Info adicionais-->
+
+        <!-- Como funciona-->
+        <section>
+            <div class="container">
+                <h2 class="text-center pt-5 pb-3 como_funciona_nm">Como funciona ?</h2>
+                <div class="row">
+                    <div class="col-md-4 cards pb-3">
+                        <div>
+                            <img src="/Tela inicial/google_img/comofunciona1.png" class="card-img-top como_funciona_img" alt="como_funciona_img1">
+                            <div class="card-body">
+                                <p class="card-text text-center como_funciona_text">Uma chamada telefônica de uma empresa assinante é feita para um cliente potencial ou existente.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 cards pb-3">
+                        <div>
+                            <img src="/Tela inicial/google_img/comofunciona2.png" class="card-img-top como_funciona_img" alt="como_funciona_img2">
+                            <div class="card-body">
+                                <p class="card-text text-center como_funciona_text">Em nanossegundos, a solicitação é encaminhada para a plataforma da Telecall que processa a chamada e adiciona as informações verificadas antes de encaminhá-la ao destinatário.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 cards pb-3">
+                        <div>
+                            <img src="/Tela inicial/google_img/comofunciona3.png" class="card-img-top como_funciona_img" alt="como_funciona_img3">
+                            <div class="card-body">
+                                <p class="card-text text-center como_funciona_text">As informações aparecem na tela do celular do recipiente que atenderá a ligação com uma chamada de voz normal.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FIM Como funciona-->
+
+
+        <!-- beneficios-->
+        <section class="usos mb-5 pb-5" id="usos">
+            <div class="container">
+                <h2 class="text-center pt-5 pb-3 beneficios_google">Benefícios</h2>
+                <div class="row">
+                    <div class="col-md-4 cards pb-3">
+                        <div>
+                            <div class="card-body">
+                                <h5 class="card-title text-center usos_titulo">Estabeleça Confiança</h5>
+                                <p class="card-text text-center usos_texto">Clientes são mais propensos a atender chamadas de organizações com os quais estão familiarizadas e com as quais já tem relação.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 cards pb-3">
+                        <div>
+                            <div class="card-body">
+                                <h5 class="card-title text-center usos_titulo">Agilize a Conexão</h5>
+                                <p class="card-text text-center usos_texto">Quando o motivo da chamada é claro, a chance de o cliente atender é muito maior e a conexão com ele mais rápida e eficiente.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 cards pb-3">
+                        <div>
+                            <div class="card-body">
+                                <h5 class="card-title text-center usos_titulo">Experiência do Cliente</h5>
+                                <p class="card-text text-center usos_texto">O nome da marca, logotipo e a visualização do motivo da chamada oferecem uma experiencia melhor e muito mais amigável para o cliente.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- beneficios fim-->
+
+        <!-- usos-->
+        <section class="usos mb-5 pb-5" id="usos">
+            <div class="container">
+                <h2 class="text-center pt-5 pb-3 usos2">Usos</h2>
+                <div class="row">
+                    <div class="col-md-3 cards pb-3">
+                        <div>
+                            <div class="card-body">
+                                <h5 class="card-title text-center usos_titulo_g">Aviso de problemas de fraude de cartão de crédito.</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 cards pb-3">
+                        <div>
+                            <div class="card-body">
+                                <h5 class="card-title text-center usos_titulo_g">Aviso de atrasos e cancelamentos de voos.</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 cards pb-3">
+                        <div>
+                            <div class="card-body">
+                                <h5 class="card-title text-center usos_titulo_g">Agendamentos de serviços, entregas, reparos e instalações.</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 cards">
+                        <div>
+                            <div class="card-body">
+                                <h5 class="card-title text-center usos_titulo_g">Avisos sobre agendamentos, exames e resultados.</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-box">
+                            <img id="modavo_logo" src="/Tela inicial/archives/modavo_logo.png" alt="">
+
+                            <p> Copyright © 2023 | Telecall. Todos os direitos reservados.</p>
+
+                            <div class="card-area">
+                                <i class="fa fa-cc-visa"></i>
+                                <i class="fa fa-credit-card"></i>
+                                <i class="fa fa-cc-mastercard"></i>
+                                <i class="fa fa-cc-paypal"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-box">
+                            <h2>Hosting</h2>
+                            <ul>
+                                <li><a href="#">Web Hosting</a></li>
+                                <li><a href="#">Cloud Hosting</a></li>
+                                <li><a href="#">CMS Hosting</a></li>
+                                <li><a href="#">WordPress Hosting</a></li>
+                                <li><a href="#">Email Hosting</a></li>
+                                <li><a href="#">VPS Hosting</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-box">
+                            <h2>Domain</h2>
+                            <ul>
+                                <li><a href="#">Web Domain</a></li>
+                                <li><a href="#">Cloud Domain</a></li>
+                                <li><a href="#">CMS Domain</a></li>
+                                <li><a href="#">WordPress Domain</a></li>
+                                <li><a href="#">Email Domain</a></li>
+                                <li><a href="#">VPS Domain</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-box">
+                            <h2>Newsletter</h2>
+                            <p>Insira seu e-mail para receber nossas notícias atualizadas.</p>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="E-mail" aria-label="Enter your Email ..." aria-describedby="basic-addon2">
+                                <span class="input-group-text" id="basic-addon2"><i class="fa fa-long-arrow-right"></i></span>
+                            </div>
+                            <h2>Follow us on</h2>
+                            <p class="socials">
+                                <i class="fa fa-facebook"></i>
+                                <i class="fa fa-dribbble"></i>
+                                <i class="fa fa-pinterest"></i>
+                                <i class="fa fa-twitter"></i>
+                            <div class="ast-footer-copyright">
+                                <p>Copyright © 2023 | Telecall. Todos os direitos reservados.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- usos FIM-->
+
+        <!-- footer-->
+
+
+        <!-- footer fim-->
 </body>

@@ -38,3 +38,5 @@ document
 function cadastrar() {
   window.alert("Cadastro concluído!");
 }
+
+const form = document.querySelector("#form");
