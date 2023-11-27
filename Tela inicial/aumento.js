@@ -1,21 +1,22 @@
-const botaoAumentar = document.querySelector(".aumentar");
-botaoAumentar.addEventListener("click", aumentarFonte);
+window.onload = function () {
+  // Obtém o tamanho da fonte inicial
+  var tamanhoFonteInicial = document.documentElement.style.fontSize;
 
-const botaoDiminuir = document.querySelector(".diminuir");
-botaoDiminuir.addEventListener("click", diminuirFonte);
+  // Evento de clique no botão de aumentar fonte
+  document
+    .getElementById("aumentar-fonte")
+    .addEventListener("click", function () {
+      // Aumenta o tamanho da fonte em 10%
+      var tamanhoFonte = parseInt(tamanhoFonteInicial) * 1.1;
+      document.documentElement.style.fontSize = tamanhoFonte + "px";
+    });
 
-function aumentarFonte() {
-  // Obtém o valor atual do tamanho da fonte
-  const tamanhoAtual = document.querySelector("body").style.fontSize;
-
-  // Define o novo tamanho da fonte
-  document.querySelector("body").style.fontSize = tamanhoAtual + "px";
-}
-
-function diminuirFonte() {
-  // Obtém o valor atual do tamanho da fonte
-  const tamanhoAtual = document.querySelector("body").style.fontSize;
-
-  // Define o novo tamanho da fonte
-  document.querySelector("body").style.fontSize = tamanhoAtual - "px";
-}
+  // Evento de clique no botão de diminuir fonte
+  document
+    .getElementById("diminuir-fonte")
+    .addEventListener("click", function () {
+      // Diminui o tamanho da fonte em 10%
+      var tamanhoFonte = parseInt(tamanhoFonteInicial) * 0.9;
+      document.documentElement.style.fontSize = tamanhoFonte + "px";
+    });
+};
