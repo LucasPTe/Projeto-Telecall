@@ -261,6 +261,11 @@ body {
   font-size: 20px;
 }
 
+.oioi {
+  color: #54595f;
+  font-size: 20px;
+}
+
 /* FIM DO INICIO*/
 
 /* MAIN - INICIO*/
@@ -334,3 +339,130 @@ body {
 }
 
 /* MAIN - FIM - FINAL*/
+
+/* NUMERO MASCARA*/
+
+.como_funciona_nm {
+  margin-top: 60px;
+  font-size: 32px;
+  color: #0062a2;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.quem_usa_titutlo_nm {
+  font-size: 22px;
+  color: #0062a2;
+  font-weight: bold;
+}
+
+.quem_mais {
+  margin-top: 60px;
+  font-size: 32px;
+  color: #0062a2;
+  font-weight: bold;
+}
+
+.pd_usar_txt {
+  font-size: 22px;
+}
+
+/*FIM NUMERO MASCARA */
+
+/* GOOGLE */
+
+.beneficios_google {
+  margin-top: 80px;
+  font-size: 32px;
+  color: #0062a2;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.usos_titulo_g {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-style: italic;
+}
+
+.img_cliente {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.beneficios_sms {
+  margin-top: 60px;
+  font-size: 32px;
+  color: #0062a2;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.usos_titulo_sms {
+  margin-bottom: 10px;
+  font-size: 30px;
+  color: #054570;
+  font-weight: bold;
+}
+
+footer {
+  background: #d6d6d6;
+  padding: 86px 0;
+}
+.single-content {
+  text-align: center;
+  padding: 115px 0;
+}
+.single-box p {
+  color: #8b8b8b;
+  line-height: 1.9;
+}
+.single-box h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #8b8b8b;
+}
+.single-box .card-area i {
+  color: #8b8b8b;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.single-box ul {
+  list-style: none;
+  padding: 0;
+}
+.single-box ul li a {
+  text-decoration: none;
+  color: #8b8b8b;
+  line-height: 2.5;
+  font-weight: 100;
+}
+.single-box h2 {
+  color: #8b8b8b;
+  font-size: 20px;
+  font-weight: 700;
+}
+#basic-addon2 {
+  background: #2fade3;
+  color: #8b8b8b;
+}
+.socials i {
+  font-size: 18px;
+  margin-right: 15px;
+}
+@media (max-width: 767px) {
+  .single-box {
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .single-box {
+    margin-bottom: 50px;
+  }
+}
+
+#modavo_logo {
+  width: 65%;
+  padding-bottom: 5%;
+}
