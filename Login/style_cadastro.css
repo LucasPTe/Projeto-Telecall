@@ -36,8 +36,18 @@ body {
   font-size: 16px;
 }
 
+.btn {
+  background-color: #0062a2;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #1979b9;
+  border: none;
+}
+
 .botao_cadastro {
-  margin-top: -20px;
+  margin-top: 0px;
   display: block;
   margin-left: auto;
   margin-right: auto;

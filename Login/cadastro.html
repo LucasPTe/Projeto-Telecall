@@ -31,66 +31,74 @@
             <p class="d-flex justify-content-center cadastro_titulo" id="cadastro_titulo">Cadastre-se</p>
 
             <!--Left Box-->
-            <form id="form">
 
-                <div class="col-md-6 right-box" id="right-box">
-                    <div class="row align-items-center">
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control form-control-lg bg-light fs-6" id="nome_completo" minlength="15" maxlength="60" required placeholder="Nome Completo">
-                        </div>
-                        <div class="input-group mb-3">
-                            <input type="date" class="form-control form-control-lg bg-light fs-6" id="data_de_nascimento" required placeholder="Data de Nascimento">
-                        </div>
-                        <div class="input-group mx-1">
-                            <form class="pb-3 form_sexo" id="sexo">
-                                <p class="sexo_titulo" id="sexo_titulo">Sexo</p>
-                                <input required type="radio" name="Sexo" value="Masculino" id="masculino">
-                                <label for="masculino">Masculino</label><br>
-                                <input required type="radio" name="Sexo" value="Feminino" id="feminino">
-                                <label for="feminino">Feminino</label><br>
-                                <input required type="radio" name="Sexo" value="Prefiro_nao_informar" id="nao_informar">
-                                <label for="prefiro_não_informar">Prefiro não informar</label>
-                            </form>
-                        </div>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control form-control-lg bg-light fs-6" required placeholder="Nome da Mãe">
-                        </div>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control form-control-lg bg-light fs-6" required id="cpf" placeholder="CPF">
-                        </div>
-                        <div class="input-group mb-3">
-                            <input type="tel" class="form-control form-control-lg bg-light fs-6" required id="celular" placeholder="Número de Celular">
-                        </div>
-                    </div>
-
-                </div>
-
-                <!--Right Box-->
-                <div class="col-md-6 right-box" id="right-box">
-                    <div class="row align-items-center">
-                        <div class="input-group mb-3">
-                            <input type="tel" class="form-control form-control-lg bg-light fs-6" required id="fixo" placeholder="Telefone Fixo">
-                        </div>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control form-control-lg bg-light fs-6" required id="endereco" placeholder="Endereço Completo">
-                        </div>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control form-control-lg bg-light fs-6" minlength="6" maxlength="6" required id="usuario" placeholder="Nome de usuário">
-                        </div>
-                        <div class="input-group mb-3">
-                            <input type="password" class="form-control form-control-lg bg-light fs-6" required id="senha" placeholder="Senha">
-                        </div>
-                        <div class="input-group mb-3">
-                            <input type="password" class="form-control form-control-lg bg-light fs-6" required id="confirmar_senha" placeholder="Confirmar senha">
-                        </div>
-                        <div class="input-group mb-5 d-flex justify-content-between">
-                        </div>
-                    </div>
+            <div class="col-md-6 right-box" id="right-box">
+                <div class="row align-items-center">
+                    <label for="nome_completo">Nome completo</label>
                     <div class="input-group mb-3">
-                        <button class="btn btn-primary botao_cadastro" onclick="cadastrar()">Cadastre-se</button>
+                        <input type="text" class="form-control form-control-lg bg-light fs-6" id="nome_completo" minlength="15" maxlength="60" required placeholder="">
+                    </div>
+                    <label for="data_de_nascimento">Data de Nascimento</label>
+                    <div class="input-group mb-3">
+                        <input type="date" class="form-control form-control-lg bg-light fs-6" id="data_de_nascimento" required placeholder="">
+                    </div>
+                    <div class="input-group mx-1">
+                        <form class="pb-3 form_sexo" id="sexo">
+                            <p class="sexo_titulo" id="sexo_titulo">Sexo</p>
+                            <input required type="radio" name="Sexo" value="Masculino" id="masculino">
+                            <label for="masculino">Masculino</label><br>
+                            <input required type="radio" name="Sexo" value="Feminino" id="feminino">
+                            <label for="feminino">Feminino</label><br>
+                            <input required type="radio" name="Sexo" value="Prefiro_nao_informar" id="nao_informar">
+                            <label for="prefiro_não_informar">Prefiro não informar</label>
+                        </form>
+                    </div>
+                    <label for="nome_da_mae">Nome da Mãe</label>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control form-control-lg bg-light fs-6" id="nome_da_mae" required placeholder="">
+                    </div>
+                    <label for="CPF">CPF</label>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control form-control-lg bg-light fs-6" required id="cpf" placeholder="">
+                    </div>
+                    <label for="numero_de_celular">Número de Celular</label>
+                    <div class="input-group mb-3">
+                        <input type="tel" class="form-control form-control-lg bg-light fs-6" required id="celular" placeholder="">
                     </div>
                 </div>
-            </form>
+
+            </div>
+
+            <!--Right Box-->
+            <div class="col-md-6 right-box" id="right-box">
+                <div class="row align-items-center">
+                    <label for="telefone_fixo">Telefone Fixo</label>
+                    <div class="input-group mb-3">
+                        <input type="tel" class="form-control form-control-lg bg-light fs-6" required id="fixo" placeholder="">
+                    </div>
+                    <label for="endereco">Endereço Completo</label>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control form-control-lg bg-light fs-6" required id="endereco" placeholder="">
+                    </div>
+                    <label for="nome_de_usuario">Nome de Usuário</label>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control form-control-lg bg-light fs-6" minlength="6" maxlength="6" required id="usuario" placeholder="">
+                    </div>
+                    <label for="senha">Senha</label>
+                    <div class="input-group mb-3">
+                        <input type="password" class="form-control form-control-lg bg-light fs-6" required id="senha" placeholder="">
+                    </div>
+                    <label for="confirmar_senha">Confirmar Senha</label>
+                    <div class="input-group mb-3">
+                        <input type="password" class="form-control form-control-lg bg-light fs-6" required id="confirmar_senha" placeholder="">
+                    </div>
+                    <div class="input-group mb-5 d-flex justify-content-between">
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <button class="btn btn-primary botao_cadastro" onclick="cadastrar()">Cadastre-se</button>
+                </div>
+            </div>
 
         </div>
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
