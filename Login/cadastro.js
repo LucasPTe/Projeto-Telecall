@@ -25,18 +25,27 @@ function validarLetras(event) {
   }
 }
 
-let senha = document.querySelector("#senha");
-let ConfirmaSenha = document.querySelector("#confirmar_senha");
+const passwordInput = document.getElementById("senha");
+const confirmPasswordInput = document.getElementById("confirmSenha");
+const labelSenha = document.getElementById("labelSenha");
+const labelConfirmSenha = document.getElementById("labelConfirmSenha");
 
-// Adicione o evento ao input
-document.querySelector("#usuario").addEventListener("input", validarLetras);
-document.querySelector("#senha").addEventListener("input", validarLetras);
-document
-  .querySelector("#confirmar_senha")
-  .addEventListener("input", validarLetras);
+function validatePasswords() {
+  const password = passwordInput.value;
+  const confirmPassword = confirmPasswordInput.value;
 
-function cadastrar() {
-  window.alert("Cadastro concluído!");
+  if (password === confirmPassword) {
+    labelSenha.textContent = "As senhas coincidem";
+    labelSenha.style.color = "green";
+    labelConfirmSenha.textContent = "As senhas coincidem";
+    labelConfirmSenha.style.color = "green";
+  } else {
+    labelSenha.textContent = "As senhas não coincidem";
+    labelConfirmSenha.textContent = "As senhas não coincidem";
+    labelSenha.style.color = "red";
+    labelConfirmSenha.style.color = "red";
+  }
 }
 
-const form = document.querySelector("#form");
+passwordInput.addEventListener("keyup", validatePasswords);
+confirmPasswordInput.addEventListener("keyup", validatePasswords);

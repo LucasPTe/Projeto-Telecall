@@ -1,29 +1,21 @@
-document
-  .getElementById("increaseFontBtn")
-  .addEventListener("click", function () {
-    changeFontSize(1.1); // Aumenta o tamanho da fonte em 10%
-  });
+const botaoAumentar = document.querySelector(".aumentar");
+botaoAumentar.addEventListener("click", aumentarFonte);
 
-document
-  .getElementById("decreaseFontBtn")
-  .addEventListener("click", function () {
-    changeFontSize(0.9); // Diminui o tamanho da fonte em 10%
-  });
+const botaoDiminuir = document.querySelector(".diminuir");
+botaoDiminuir.addEventListener("click", diminuirFonte);
 
-function changeFontSize(scale) {
-  const elementsWithText = document.querySelectorAll(
-    "p, h1, h2, h3, h4, h5, h6, span, a, li, td, th, label"
-  );
+function aumentarFonte() {
+  // Obtém o valor atual do tamanho da fonte
+  const tamanhoAtual = document.querySelector("body").style.fontSize;
 
-  elementsWithText.forEach(function (element) {
-    const currentSize = parseFloat(
-      window.getComputedStyle(element, null).getPropertyValue("font-size")
-    );
-    element.style.fontSize = currentSize * scale + "px";
-  });
+  // Define o novo tamanho da fonte
+  document.querySelector("body").style.fontSize = tamanhoAtual + "px";
 }
 
-function toggleDarkMode() {
-  const body = document.body;
-  body.classList.toggle("dark-mode");
+function diminuirFonte() {
+  // Obtém o valor atual do tamanho da fonte
+  const tamanhoAtual = document.querySelector("body").style.fontSize;
+
+  // Define o novo tamanho da fonte
+  document.querySelector("body").style.fontSize = tamanhoAtual - "px";
 }
