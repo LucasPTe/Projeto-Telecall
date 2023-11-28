@@ -1,0 +1,28 @@
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+/* Adapte os estilos conforme necessário para o modo escuro */
+.dark-mode .navbar {
+  background-color: #333333;
+  /* Outros estilos específicos para o modo escuro... */
+}
+
+.dark-mode .container-main {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.dark-mode main {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.dark-mode .texto_solucoes {
+  color: #ffffff;
+}
+
+.dark-mode .cards-con-1 {
+  background-color: #1a1a1a;
+}

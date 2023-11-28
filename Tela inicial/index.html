@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-bs-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -13,10 +13,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="/Tela inicial/sobre.css">
+    <link rel="stylesheet" href="dark-mode.css" id="dark-mode-stylesheet">
+    <script src="dark-mode.js"></script>
 
 </head>
 
-<body>
+<body id="body" class="dark-mode">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
     <!-- Navbar -->
@@ -30,30 +32,33 @@
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li>
-                                <button type="button" class="aumentar" onclick="aumentarFonte()">Aumentar fonte</button>
-                            </li>
-                            <li>
-                                <button type="button" class="diminuir" onclick="diminuirFonte()">Diminuir fonte</button>
+                            <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+                            <li class="nav-item ">
+                                <button class="btn btn-primary border-3 m-0 mx-0 btn-fonte" id="increaseFontBtn">
+                                    A
+                                </button>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active mx-lg-2" aria-current="page" href="#">Home</a>
+                                <button class="btn btn-primary border-3 m-0 mx-1 btn-fonte" id="decreaseFontBtn">
+                                    a
+                                </button>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" aria-current="page" href="/Tela inicial/index.html">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link mx-lg-2" href="/Tela inicial/sobre.html">Sobre</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link mx-lg-2" href="#">CPaaS</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Serviços
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="/Tela inicial/2FA.html">2FA</a></li>
-                                    <li><a class="dropdown-item" href="/Tela inicial/numero_mascara.html">Número Máscara</a></li>
-                                    <li><a class="dropdown-item" href="/Tela inicial/google.html">Google Verified Calls</a></li>
-                                    <li><a class="dropdown-item" href="/Tela inicial/sms.html">SMS</a></li>
+                                <ul class="dropdown-menu btn-drop">
+                                    <li><a class="dropdown-item btn-drop" href="/Tela inicial/2FA.html">2FA</a></li>
+                                    <li><a class="dropdown-item btn-drop" href="/Tela inicial/numero_mascara.html">Número Máscara</a></li>
+                                    <li><a class="dropdown-item btn-drop" href="/Tela inicial/google.html">Google Verified Calls</a></li>
+                                    <li><a class="dropdown-item btn-drop" href="/Tela inicial/sms.html">SMS</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -106,8 +111,8 @@
 
         <!--soluções-->
         <main class="container-main">
-            <section class="solucoes mb-5 pb-5" id="solucoes">
-                <div class="container">
+            <section class="solucoes mb-5 pb-5 cards-con-1" id="solucoes">
+                <div class="container cards-con-1 ">
                     <h2 class="text-center pt-5 pb-3 titulo_solucoes">Nossas Soluções</h2>
                     <p class="d-flex justify-content-center texto_solucoes">Potencialize suas estratégias de comunicação com nossas soluções inovadoras</p>
                     <div class="row">
@@ -314,8 +319,7 @@
 
         </footer>
 
-
-
+        <script src="/Tela inicial/aumento.js"></script>
 </body>
 
 

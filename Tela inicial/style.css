@@ -99,6 +99,19 @@ body {
   font-size: 20px;
 }
 
+.btn-drop:focus {
+  background-color: #8cd8f7;
+}
+
+.btn-fonte {
+  background-color: #0062a2;
+  border: none;
+}
+
+.btn-fonte:hover {
+  background-color: #2fade3;
+  border: none;
+}
 /* main */
 
 .oq_cpaas {
