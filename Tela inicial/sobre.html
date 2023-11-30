@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-bs-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -13,11 +13,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="/Tela inicial/sobre.css">
+    <link rel="stylesheet" href="dark-mode.css" id="dark-mode-stylesheet">
+    <script src="dark-mode.js"></script>
 
 </head>
 
-<body>
+<body id="body" class="dark-mode">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
     <!-- Navbar -->
     <header>
         <nav class="navbar bg-body-tertiary navbar-expand-lg fixed-top">
@@ -29,30 +32,39 @@
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active mx-lg-2" aria-current="page" href="/Tela inicial/index.html">Home</a>
+                            <button onclick="toggleDarkMode()" class="btn btn-primary border-3 m-0 mx-1 btn-fonte">Modo Escuro</button>
+                            <li class="nav-item ">
+                                <button class="btn btn-primary border-3 m-0 mx-0 btn-fonte" id="increaseFontBtn">
+                                    A
+                                </button>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mx-lg-2" href="#">Sobre</a>
+                                <button class="btn btn-primary border-3 m-0 mx-1 btn-fonte" id="decreaseFontBtn">
+                                    a
+                                </button>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" aria-current="page" href="/Tela inicial/index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mx-lg-2" href="#">CPaaS</a>
+                                <a class="nav-link mx-lg-2" href="/Tela inicial/sobre.html">Sobre</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Serviços
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="/Tela inicial/2FA.html">2FA</a></li>
-                                    <li><a class="dropdown-item" href="/Tela inicial/numero_mascara.html">Número Máscara</a></li>
-                                    <li><a class="dropdown-item" href="/Tela inicial/google.html">Google Verified Calls</a></li>
-                                    <li><a class="dropdown-item" href="/Tela inicial/sms.html">SMS</a></li>
+                                <ul class="dropdown-menu btn-drop">
+                                    <li><a class="dropdown-item btn-drop" href="/Tela inicial/2FA.html">2FA</a></li>
+                                    <li><a class="dropdown-item btn-drop" href="/Tela inicial/numero_mascara.html">Número Máscara</a></li>
+                                    <li><a class="dropdown-item btn-drop" href="/Tela inicial/google.html">Google Verified Calls</a></li>
+                                    <li><a class="dropdown-item btn-drop" href="/Tela inicial/sms.html">SMS</a></li>
                                 </ul>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <a href="#" class="login-button">Área do Cliente</a>
+                <a href="/Login/login.html" class="login-button">Área do Cliente</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -89,112 +101,15 @@
         <!-- FIM Seção Sobre-->
 
         <!-- Info adicionais-->
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 cards pb-3">
-                        <div>
-                            <h1 class="d-flex justify-content-center percent">100%</h1>
-                            <div class="card-body">
-                                <p class="card-text mb-5 d-flex justify-content-center percent_text">Dos bots automatizados.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 cards pb-3">
-                        <div>
-                            <h1 class="d-flex justify-content-center percent">99%</h1>
-                            <div class="card-body">
-                                <p class="card-text mb-5 d-flex justify-content-center percent_text">Dos ataques de phishing em massa</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 cards pb-3">
-                        <div>
-                            <h1 class="d-flex justify-content-center percent">66%</h1>
-                            <div class="card-body">
-                                <p class="card-text mb-5 d-flex justify-content-center percent_text">Dos ataques direcionados.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!-- FIM Info adicionais-->
 
-        <!-- Como funciona-->
-        <section>
-            <div class="container">
-                <h2 class="text-center pt-5 pb-3 como_funciona">Como funciona ?</h2>
-                <div class="row">
-                    <div class="col-md-3 cards pb-3">
-                        <div>
-                            <img src="/Tela inicial/2FA_img/comofunciona_img1.png" class="card-img-top como_funciona_img" alt="como_funciona_img1">
-                            <div class="card-body">
-                                <p class="card-text text-center como_funciona_text">Usuário acessa seu site o aplicativo e digita a senha cadastrada para entrar em seu perfil ou completar uma transação.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 cards pb-3">
-                        <div>
-                            <img src="/Tela inicial/2FA_img/aviso_2fa.png" class="card-img-top como_funciona_img" alt="como_funciona_img2">
-                            <div class="card-body">
-                                <p class="card-text text-center como_funciona_text">A Telecall recebe a tentativa de login e solicita que o usuário insira seu número de telefone para autorizar o acesso.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 cards pb-3">
-                        <div>
-                            <img src="/Tela inicial/2FA_img/recebe_sms.png" class="card-img-top como_funciona_img" alt="como_funciona_img3">
-                            <div class="card-body">
-                                <p class="card-text text-center como_funciona_text">Após inserir seu número, a Telecall envia para o usuário por SMS, chamada ou e-mail um código PIN de uso único.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 cards">
-                        <div>
-                            <img src="/Tela inicial/2FA_img/2fa_final.png" class="card-img-top como_funciona_img" alt="como_funciona_img4">
-                            <div class="card-body">
-                                <p class="card-text text-center como_funciona_text">O usuário insere o código no site ou aplicativo para concluir o processo de verificação.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FIM Como funciona-->
-
-
-        <!-- beneficios-->
-        <section class="about pb-5" id="sobre">
-            <div class="container">
-                <h2 class="text-center pb-5 beneficios_2fa_titulo">Benefícios</h2>
-                <div class="row mb-5 pb-5">
-                    <div class="col-xl-5 espaco_entre">
-                        <img src="/Tela inicial/2FA_img/beneficios_2fa.png" class="img-fluid" alt="beneficios_2fa_Imagem">
-                    </div>
-                    <div class="col-xl-7 d-flex align-items-center borda_2fa">
-                        <p class="beneficios_2fa_texto">
-                            Assegure a segurança de seus clientes de forma fácil e eficiente com nossa API de integração rápida. Envie códigos de verificação (OTP) por SMS, voz ou e-mail, oferecendo flexibilidade para a conclusão de tarefas, mesmo em situações adversas. Em caso de falha no envio por SMS, a opção de chamada de voz é acionada, e em outra falha, o envio por e-mail é ativado. Reduza significativamente casos de fraude e invasões, protegendo contra acessos não autorizados. Utilize nossa plataforma intuitiva para monitorar o uso diário, mensal ou anual, adaptando a segurança conforme as necessidades específicas de sua operação.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- beneficios fim-->
-
-        <!-- Quem usa?-->
-
-
-        <!-- Quem usa? FIM-->
 
         <!-- footer-->
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 col-sm-6">
+                    <div class="col-lg-4 col-sm-6">
                         <div class="single-box">
                             <img id="modavo_logo" src="/Tela inicial/archives/modavo_logo.png" alt="">
 
@@ -208,33 +123,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
+                    <div class="col-lg-4 col-sm-6">
                         <div class="single-box">
-                            <h2>Hosting</h2>
+                            <h2>Redes Sociais</h2>
                             <ul>
-                                <li><a href="#">Web Hosting</a></li>
-                                <li><a href="#">Cloud Hosting</a></li>
-                                <li><a href="#">CMS Hosting</a></li>
-                                <li><a href="#">WordPress Hosting</a></li>
-                                <li><a href="#">Email Hosting</a></li>
-                                <li><a href="#">VPS Hosting</a></li>
+                                <li><a href="https://www.facebook.com/TelecallBr">Facebook</a></li>
+                                <li><a href="https://www.instagram.com/telecallbr/">Instagram</a></li>
+                                <li><a href="https://www.linkedin.com/company/telecall/">Linkedin</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single-box">
-                            <h2>Domain</h2>
-                            <ul>
-                                <li><a href="#">Web Domain</a></li>
-                                <li><a href="#">Cloud Domain</a></li>
-                                <li><a href="#">CMS Domain</a></li>
-                                <li><a href="#">WordPress Domain</a></li>
-                                <li><a href="#">Email Domain</a></li>
-                                <li><a href="#">VPS Domain</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
+                    <div class="col-lg-4 col-sm-6">
                         <div class="single-box">
                             <h2>Newsletter</h2>
                             <p>Insira seu e-mail para receber nossas notícias atualizadas.</p>
@@ -242,12 +141,6 @@
                                 <input type="text" class="form-control" placeholder="E-mail" aria-label="Enter your Email ..." aria-describedby="basic-addon2">
                                 <span class="input-group-text" id="basic-addon2"><i class="fa fa-long-arrow-right"></i></span>
                             </div>
-                            <h2>Follow us on</h2>
-                            <p class="socials">
-                                <i class="fa fa-facebook"></i>
-                                <i class="fa fa-dribbble"></i>
-                                <i class="fa fa-pinterest"></i>
-                                <i class="fa fa-twitter"></i>
                             <div class="ast-footer-copyright">
                                 <p>Copyright © 2023 | Telecall. Todos os direitos reservados.</p>
                             </div>
@@ -256,5 +149,6 @@
                 </div>
             </div>
         </footer>
+        <script src="/Tela inicial/aumento.js"></script>
         <!-- footer fim-->
 </body>
