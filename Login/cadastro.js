@@ -76,7 +76,7 @@ const labelNome = document.getElementById("labelNome");
 function validateNome() {
   const nome = nomeInput.value;
 
-  if (nome.length < 6) {
+  if (nome.length < 15) {
     labelNome.textContent = "Nome muito curto";
     labelNome.style.color = "red";
     validNome = false;
@@ -105,7 +105,7 @@ const labelMae = document.getElementById("labelMae");
 function validateMae() {
   const mae = maeInput.value;
 
-  if (mae.length < 6) {
+  if (mae.length < 15) {
     labelMae.textContent = "Nome da mãe é muito curto";
     labelMae.style.color = "red";
     validMae = false;

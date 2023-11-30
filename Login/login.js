@@ -90,6 +90,30 @@ function login() {
   } else {
     showModal("Usuário ou senha incorretos!");
   }
+  atualizarConteudoUsuario();
+}
+
+function atualizarConteudoUsuario() {
+  let userLogado = JSON.parse(localStorage.getItem("userLogado"));
+  let logado = document.querySelector("#logado");
+
+  // Verifica se o usuário está logado
+  if (userLogado && userLogado.user) {
+    // Atualiza o conteúdo do span
+    logado.innerHTML = `Olá, ${userLogado.user}!`;
+  }
+}
+
+// Chama a função de atualização do conteúdo do usuário após o usuário fazer login
+window.addEventListener("load", atualizarConteudoUsuario);
+
+// Chama a função de atualização do conteúdo do usuário ao carregar a página
+atualizarConteudoUsuario();
+
+// Se o token não estiver presente, redireciona para a página de login
+if (localStorage.getItem("token") == null) {
+  alert("Você precisa estar logado para sair da sua conta.");
+  window.location.href = "/Login/login.html";
 }
 
 function showModal(message) {
@@ -112,5 +136,6 @@ if (localStorage.getItem("token") == null) {
 
 function sair() {
   localStorage.removeItem("token");
+  localStorage.removeItem("userLogado");
   window.location.href = "/Login/login.html";
 }
