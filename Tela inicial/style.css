@@ -351,7 +351,9 @@ body {
   margin-right: auto;
 }
 
+
 .card_texto_quem_usa {
+  margin-bottom: 10px;
   font-size: 16px;
   color: #54595f;
 }
@@ -486,6 +488,7 @@ footer {
 }
 
 .video{
+  margin-bottom: 20px;
   display: block;
   margin-left: auto;
   margin-right: auto;
