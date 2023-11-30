@@ -18,7 +18,7 @@
 
 </head>
 
-<body id="body" class="dark-mode">
+<body id="body">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
     <!-- Navbar -->
@@ -32,17 +32,6 @@
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <button onclick="toggleDarkMode()" class="btn btn-primary border-3 m-0 mx-1 btn-fonte">Modo Escuro</button>
-                            <li class="nav-item ">
-                                <button class="btn btn-primary border-3 m-0 mx-0 btn-fonte" id="increaseFontBtn">
-                                    A
-                                </button>
-                            </li>
-                            <li class="nav-item">
-                                <button class="btn btn-primary border-3 m-0 mx-1 btn-fonte" id="decreaseFontBtn">
-                                    a
-                                </button>
-                            </li>
 
                             <li class="nav-item">
                                 <a class="nav-link mx-lg-2" aria-current="page" href="/Tela inicial/index.html">Home</a>
@@ -64,10 +53,26 @@
                         </ul>
                     </div>
                 </div>
+                <div class="container-dark">
+                    <label class="switch">
+                      <input type="checkbox" id="darkModeToggle">
+                      <span class="slider"></span>
+                    </label>
+                </div>
+                    <button class="btn btn-primary border-3 m-0 mx-0 btn-fonte" id="increaseFontBtn">
+                        A
+                    </button>
+                </div>
+                <div class="nav-item">
+                    <button class="btn btn-primary border-3 m-0 mx-1 btn-fonte" id="decreaseFontBtn">
+                        a
+                    </button>
+                </div>
                 <a href="/Login/login.html" class="login-button">Área do Cliente</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <a onclick="sair()" class="login-button" id="logado">Sair</a>
             </div>
         </nav>
 
@@ -76,28 +81,24 @@
         <!-- Seção Sobre-->
         <section class="d-flex allign-items-center h-75 home_2fa">
             <div class="container distancia_navbar">
-                <div class="row d-flex align-items-center">
-                    <div class="col-md-6">
+                <div class="row d-flex align-items-center justify-content-center">
+                    <div>
                         <h1 class="titulo_landing">Sobre o grupo</h1>
                         <h2 class="subtitle_landing">1º período Análise e desenvolvimento de sistemas</h2>
-                        <h3 class="subtitle_landing_ita">About the group</h3>
-                        <p class="texto_landing">O 2FA é um procedimento de segurança que garante que serão
-                            necessários 2 fatores únicos para liberação de uma ação. O
-                            primeiro fator é a senha que o usuário e o segundo pode ser
-                            autenticado via token, via detecção de impressão digital,
-                            reconhecimento facial, código enviado via sms, entre outros.</p>
-                    </div>
-                    <div class="col-md-6 d-flex justify-content-end">
-                        <img src="/Tela inicial/2FA_img/2fa.png" class="img-fluid" alt="modavo_solucoes">
+                        <p class="texto_landing">Turma: ADS0101N</p>
+                        <p class="texto_landing">Unidade: Bonsucesso</p>
+                        <p class="texto_landing">Turno: Noite</p>
+                        <p class="texto_landing">Alunos: Annibal Gulias Moreira e Lucas Roberto Lopes da Silva</p>
+                        <p class="texto_landing">E-mail dos alunos: annibal.gulias@gmail.com e ll.lopes2506@gmail.com </p>
+                        <p class="texto_landing">Professores: Carolina Sacramento, Charles Bastos e Marco Xaves Valentim</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <h2 class="desc_2fa">Sobre o grupo:</h2>
-        <h4 class="descs_2fa">Envie uma senha via SMS, voz ou e-mail para autenticação do usuário.</h4>
-        <h4 class="descs_2fa">Adicione uma camada extra de segurança além da senha pessoal.</h4>
-        <h4 class="descs_2fa1">Ofereça maior segurança para usuários.</h4>
+        <video class="video" controls autoplay>
+            <source src="/Tela inicial/sobre_img/Jackson.mp4" class="img-fluid" type="video/mp4">
+        </video>
         <!-- FIM Seção Sobre-->
 
         <!-- Info adicionais-->

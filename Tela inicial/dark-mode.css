@@ -1,21 +1,66 @@
-.dark-mode {
-  background-color: #1a1a1a;
-  color: #ffffff;
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
 }
 
-/* Adapte os estilos conforme necessário para o modo escuro */
-.dark-mode .navbar {
-  background-color: #333333;
-  /* Outros estilos específicos para o modo escuro... */
+.container-dark {
+  text-align: center;
+  padding: 10px;
+}
+
+/* Switch styles */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #333;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
 }
 
 .dark-mode .container-main {
-  background-color: #1a1a1a;
+  background-color: #333;
   color: #ffffff;
 }
 
 .dark-mode main {
-  background-color: #1a1a1a;
+  background-color: #333;
   color: #ffffff;
 }
 
@@ -24,7 +69,7 @@
 }
 
 .dark-mode .cards-con-1 {
-  background-color: #1a1a1a;
+  background-color: #333;
 }
 
 .dark-mode .texto_oq_cpaas {
@@ -53,4 +98,45 @@
 
 .dark-mode .card_texto_quem_usa {
   color: #ffffff;
+}
+
+.dark-mode .navbar {
+  background-color: #333;
+  color: #ffffff;
+}
+
+.dark-mode .navbar{
+    background-color: #978e8e;
+}
+
+.dark-mode .text-nav{
+  color: #eaf8f8
+}
+
+.dark-mode #drop{
+  background-color: #978e8e;
+}
+
+.dark-mode .text_dark{
+  color: #6bc5c5;
+}
+
+.dark-mode .fundo_dark_mode_card{
+  background-color: #020202;
+}
+
+.dark-mode .titulo_card{
+  color: #fff;
+}
+
+.dark-mode .texto_card{
+  color: #fff;
+}
+
+.dark-mode .text_dark_footer{
+  color: #fff;
+}
+
+.dark-mode .aa{
+  background-color: #978e8e ;
 }

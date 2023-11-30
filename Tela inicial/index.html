@@ -18,51 +18,56 @@
 
 </head>
 
-<body id="body" class="dark-mode">
+<body id="body">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
     <!-- Navbar -->
-    <header>
-        <nav class="navbar bg-body-tertiary navbar-expand-lg fixed-top">
+<header>
+    <div id="aa">
+        <nav class="navbar navbar-expand-lg fixed-top nav-bar-fundo">
             <div class="container-fluid">
                 <a class="navbar-brand me-auto" href="/Tela inicial/index.html"><img src="/Tela inicial/archives/modavo_logo.png" id="logo_navbar" class="img-fluid" alt="Logo_Modavo"></a>
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                    <div class="offcanvas-body">
+                    <div class="offcanvas-body" id="drop">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <button onclick="toggleDarkMode()" class="btn btn-primary border-3 m-0 mx-1 btn-fonte">Modo Escuro</button>
-                            <li class="nav-item ">
-                                <button class="btn btn-primary border-3 m-0 mx-0 btn-fonte" id="increaseFontBtn">
-                                    A
-                                </button>
-                            </li>
-                            <li class="nav-item">
-                                <button class="btn btn-primary border-3 m-0 mx-1 btn-fonte" id="decreaseFontBtn">
-                                    a
-                                </button>
-                            </li>
 
                             <li class="nav-item">
-                                <a class="nav-link mx-lg-2" aria-current="page" href="/Tela inicial/index.html">Home</a>
+                                <a class="nav-link mx-lg-2 text-nav" aria-current="page" href="/Tela inicial/index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mx-lg-2" href="/Tela inicial/sobre.html">Sobre</a>
+                                <a class="nav-link mx-lg-2 text-nav" href="/Tela inicial/sobre.html">Sobre</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle text-nav" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Serviços
                                 </a>
-                                <ul class="dropdown-menu btn-drop">
-                                    <li><a class="dropdown-item btn-drop" href="/Tela inicial/2FA.html">2FA</a></li>
-                                    <li><a class="dropdown-item btn-drop" href="/Tela inicial/numero_mascara.html">Número Máscara</a></li>
-                                    <li><a class="dropdown-item btn-drop" href="/Tela inicial/google.html">Google Verified Calls</a></li>
-                                    <li><a class="dropdown-item btn-drop" href="/Tela inicial/sms.html">SMS</a></li>
+                                <ul class="dropdown-menu btn-drop" id="drop">
+                                    <li><a class="dropdown-item btn-drop text_dark" href="/Tela inicial/2FA.html">2FA</a></li>
+                                    <li><a class="dropdown-item btn-drop text_dark" href="/Tela inicial/numero_mascara.html">Número Máscara</a></li>
+                                    <li><a class="dropdown-item btn-drop text_dark" href="/Tela inicial/google.html">Google Verified Calls</a></li>
+                                    <li><a class="dropdown-item btn-drop text_dark" href="/Tela inicial/sms.html">SMS Programável</a></li>
                                 </ul>
                             </li>
                         </ul>
                     </div>
+                </div>
+                <div class="container-dark">
+                    <label class="switch">
+                      <input type="checkbox" id="darkModeToggle">
+                      <span class="slider"></span>
+                    </label>
+                </div>
+                    <button class="btn btn-primary border-3 m-0 mx-0 btn-fonte" id="increaseFontBtn">
+                        A
+                    </button>
+                </div>
+                <div class="nav-item">
+                    <button class="btn btn-primary border-3 m-0 mx-1 btn-fonte" id="decreaseFontBtn">
+                        a
+                    </button>
                 </div>
                 <a href="/Login/login.html" class="login-button">Área do Cliente</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -71,10 +76,10 @@
                 <a onclick="sair()" class="login-button" id="logado">Sair</a>
             </div>
         </nav>
-
+    </div>
         <!-- Fim Navbar -->
 
-    </header>
+</header>
     <article>
 
 
@@ -118,7 +123,7 @@
                     <p class="d-flex justify-content-center texto_solucoes">Potencialize suas estratégias de comunicação com nossas soluções inovadoras</p>
                     <div class="row">
                         <div class="col-md-3 cards pb-3">
-                            <div class="card">
+                            <div class="card fundo_dark_mode_card">
                                 <img src="/Tela inicial/archives/cadeado.png" class="card-img-top logo_card" alt="Solução 1">
                                 <div class="card-body">
                                     <h5 class="card-title my-3 titulo_card">Autenticação de Dois Fatores</h5>
@@ -128,17 +133,17 @@
                             </div>
                         </div>
                         <div class="col-md-3 cards pb-3">
-                            <div class="card">
+                            <div class="card fundo_dark_mode_card">
                                 <img src="/Tela inicial/archives/sms.png" class="card-img-top logo_card" alt="Solução 2">
                                 <div class="card-body">
-                                    <h5 class="card-title my-3 titulo_card">SMS</h5>
+                                    <h5 class="card-title my-3 titulo_card">SMS Programável</h5>
                                     <p class="card-text mb-5 texto_card">Impulsione suas campanhas com nosso serviço de envio de SMS em massa.</p>
                                     <a href="/Tela inicial/sms.html"> <input type="button" value="Saiba Mais" class="btn btn-primary px-4 botao_card"> </a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3 cards pb-3">
-                            <div class="card">
+                            <div class="card fundo_dark_mode_card">
                                 <img src="/Tela inicial/archives/mascara.png" class="card-img-top logo_card" alt="Solução 3">
                                 <div class="card-body">
                                     <h5 class="card-title my-3 titulo_card">Número Máscara</h5>
@@ -148,7 +153,7 @@
                             </div>
                         </div>
                         <div class="col-md-3 cards pb-3">
-                            <div class="card">
+                            <div class="card fundo_dark_mode_card">
                                 <img src="/Tela inicial/archives/google.png" class="card-img-top logo_card" alt="Solução 4">
                                 <div class="card-body">
                                     <h5 class="card-title my-3 titulo_card">Google Verified Calls</h5>
@@ -250,8 +255,8 @@
             <!-- fim porque modavo?-->
         </main>
         <!--FIM MAIN-->
-        <footer>
-            <div class="container">
+        <footer class="aa">
+            <div class="container aa">
                 <div class="row">
                     <div class="col-lg-4 col-sm-6">
                         <div class="single-box">
@@ -269,24 +274,24 @@
                     </div>
                     <div class="col-lg-4 col-sm-6">
                         <div class="single-box">
-                            <h2>Redes Sociais</h2>
+                            <h2 class="text_dark_footer">Redes Sociais</h2>
                             <ul>
-                                <li><a href="https://www.facebook.com/TelecallBr">Facebook</a></li>
-                                <li><a href="https://www.instagram.com/telecallbr/">Instagram</a></li>
-                                <li><a href="https://www.linkedin.com/company/telecall/">Linkedin</a></li>
+                                <li><a href="https://www.facebook.com/TelecallBr" class="text_dark_footer">Facebook</a></li>
+                                <li><a href="https://www.instagram.com/telecallbr/" class="text_dark_footer">Instagram</a></li>
+                                <li><a href="https://www.linkedin.com/company/telecall/" class="text_dark_footer">Linkedin</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6">
                         <div class="single-box">
-                            <h2>Newsletter</h2>
-                            <p>Insira seu e-mail para receber nossas notícias atualizadas.</p>
+                            <h2 class="text_dark_footer">Newsletter</h2>
+                            <p class="text_dark_footer">Insira seu e-mail para receber nossas notícias atualizadas.</p>
                             <div class="input-group mb-3">
                                 <input type="text" class="form-control" placeholder="E-mail" aria-label="Enter your Email ..." aria-describedby="basic-addon2">
                                 <span class="input-group-text" id="basic-addon2"><i class="fa fa-long-arrow-right"></i></span>
                             </div>
                             <div class="ast-footer-copyright">
-                                <p>Copyright © 2023 | Telecall. Todos os direitos reservados.</p>
+                                <p class="text_dark_footer">Copyright © 2023 | Telecall. Todos os direitos reservados.</p>
                             </div>
                         </div>
                     </div>
