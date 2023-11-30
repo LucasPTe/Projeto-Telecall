@@ -129,11 +129,6 @@ let logado = document.querySelector("#logado");
 
 logado.innerHTML = `Olá, ${userLogado.user}. Sair`;
 
-if (localStorage.getItem("token") == null) {
-  alert("você precisa estar logado para sair da sua conta.");
-  window.location.href = "/Login/login.html";
-}
-
 function sair() {
   localStorage.removeItem("token");
   localStorage.removeItem("userLogado");
