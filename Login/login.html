@@ -30,13 +30,13 @@
                     <img src="/Login/login_img/login.png" class="img-fluid" style="width: 250px" alt="imagem_login">
                 </div>
                 <p class="text-white fs-2">Seja bem-vindo!</p>
-                <small class="text-white text-wrap text-center" style="width: 17rem;">Teste 0.1 (não está pronto)</small>
+                <small class="text-white text-wrap text-center" style="width: 17rem;"></small>
             </div>
             <!--Right Box-->
             <div class="col-md-6 right-box">
                 <div class="row align-items-center">
                     <div class="input-group mb-3">
-                        <button class="btn btn-primary d-flex justify-content-between mt-3 botao_voltar" id="botao_voltar"><a href="/Tela inicial/index.html">Voltar</a></button>
+                        <a href="/Tela inicial/index.html"> <input type="button" value="Voltar" class="btn btn-primary botao_card"> </a>
                     </div>
                     <div class="header-text mb-4">
                         <p class="bem_vindo d-flex justify-content-center">Entre em sua conta</p>
@@ -60,11 +60,11 @@
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <button class="btn btn-lg btn-primary fs-6 login_botao" onclick="login()">Entrar</button>
+                        <input type="button" value="Entrar" class="btn btn-lg btn-primary fs-6 login_botao" onclick="login()">
                     </div>
                     <p>Não possui conta?</p>
-                    <div class="input-group mb-3">
-                        <button class="btn btn-lg btn-primary fs-6 botao_cadastro"><a href="/Login/cadastro.html" id="botao_cadastrar">Cadastre-se</a></button>
+                    <div>
+                        <a href="/Login/cadastro.html" id="botao_cadastrar"><input type="button" value="Cadastra-se" class="btn btn-lg btn-primary fs-6 cadastro_botao"></a>
                     </div>
                     <!-- Modal -->
                     <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

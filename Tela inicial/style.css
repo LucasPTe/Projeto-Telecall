@@ -30,6 +30,10 @@ body {
   transition: 0.3s background-color;
 }
 
+.voltar_botao{
+  text-decoration: none;
+}
+
 .login-button:hover {
   background-color: #bce5f5;
 }
