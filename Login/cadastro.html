@@ -34,7 +34,7 @@
 
             <div class="col-md-6 right-box" id="right-box">
                 <div class="row align-items-center">
-                    <label for="nome_completo">Nome completo</label>
+                    <label for="nome_completo" id="labelNome">Nome completo</label>
                     <div class="input-group mb-3">
                         <input type="text" class="form-control form-control-lg bg-light fs-6" id="nome_completo" minlength="15" maxlength="60" required placeholder="">
                     </div>
@@ -72,11 +72,11 @@
             <!--Right Box-->
             <div class="col-md-6 right-box" id="right-box">
                 <div class="row align-items-center">
-                    <label for="telefone_fixo">Telefone Fixo</label>
+                    <label for="telefone_fixo" id="labelFixo">Telefone Fixo</label>
                     <div class="input-group mb-3">
                         <input type="tel" class="form-control form-control-lg bg-light fs-6" required id="fixo" placeholder="">
                     </div>
-                    <label for="endereco">Endereço Completo</label>
+                    <label for="endereco" id="labelRua">Endereço Completo</label>
                     <div class="input-group mb-3">
                         <input type="text" class="form-control form-control-lg bg-light fs-6" required id="endereco" placeholder="">
                     </div>
@@ -97,6 +97,24 @@
                 </div>
                 <div class="input-group mb-3">
                     <button class="btn btn-primary botao_cadastro" onclick="cadastrar()">Cadastre-se</button>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Mensagem</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="redirect()"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p id="modalMessage"></p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="redirect()">Fechar</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 

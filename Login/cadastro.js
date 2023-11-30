@@ -11,6 +11,94 @@ function voltar() {
   window.location = "";
 }
 
+let validRua = false;
+let validFixo = false;
+let validNome = false;
+let validMae = false;
+let validCpf = false;
+let validCelular = false;
+let validUsuario = false;
+let validSenha = false;
+
+// Validação da Rua
+const ruaInput = document.getElementById("endereco");
+const labelRua = document.getElementById("labelRua");
+
+function validateRua() {
+  const rua = ruaInput.value;
+
+  if (rua.length < 6) {
+    labelRua.textContent = "Endereço muito curto";
+    labelRua.style.color = "red";
+    validRua = false;
+  } else {
+    labelRua.textContent = "Endereço";
+    labelRua.style.color = "green";
+    validRua = true;
+  }
+}
+ruaInput.addEventListener("input", validateRua);
+
+ruaInput.addEventListener("keydown", function (event) {
+  // Verifica se a tecla pressionada é um número
+  const key = event.key;
+  if (key.match(/[0-9]/)) {
+    // Retorna false para impedir que o número seja inserido
+    event.preventDefault();
+  }
+});
+
+//Validação do telefone fixo
+
+const fixoInput = document.getElementById("fixo");
+const labelFixo = document.getElementById("labelFixo");
+
+function validateFixo() {
+  const fixo = fixoInput.value;
+
+  if (fixo.length < 14) {
+    labelFixo.textContent = "O número é inválido";
+    labelFixo.style.color = "red";
+    validFixo = false;
+  } else {
+    labelFixo.textContent = "Número válido";
+    labelFixo.style.color = "green";
+    validFixo = true;
+  }
+}
+fixoInput.addEventListener("input", validateFixo);
+
+//validação do nome completo
+
+const nomeInput = document.getElementById("nome_completo");
+const labelNome = document.getElementById("labelNome");
+
+function validateNome() {
+  const nome = nomeInput.value;
+
+  if (nome.length < 6) {
+    labelNome.textContent = "Nome muito curto";
+    labelNome.style.color = "red";
+    validNome = false;
+  } else {
+    labelNome.textContent = "Nome completo";
+    labelNome.style.color = "green";
+    validNome = true;
+  }
+}
+nomeInput.addEventListener("input", validateNome);
+
+nomeInput.addEventListener("keydown", function (event) {
+  // Verifica se a tecla pressionada é um número
+  const key = event.key;
+  if (key.match(/[0-9]/)) {
+    // Retorna false para impedir que o número seja inserido
+    event.preventDefault();
+  }
+});
+
+// validação nome da mãe
+
 const maeInput = document.getElementById("mae");
 const labelMae = document.getElementById("labelMae");
 
@@ -20,12 +108,25 @@ function validateMae() {
   if (mae.length < 6) {
     labelMae.textContent = "Nome da mãe é muito curto";
     labelMae.style.color = "red";
+    validMae = false;
   } else {
     labelMae.textContent = "Nome da mãe";
     labelMae.style.color = "green";
+    validMae = true;
   }
 }
 maeInput.addEventListener("input", validateMae);
+
+maeInput.addEventListener("keydown", function (event) {
+  // Verifica se a tecla pressionada é um número
+  const key = event.key;
+  if (key.match(/[0-9]/)) {
+    // Retorna false para impedir que o número seja inserido
+    event.preventDefault();
+  }
+});
+
+//validação CPF
 
 const cpfInput = document.getElementById("cpf");
 const labelCpf = document.getElementById("labelCpf");
@@ -36,12 +137,16 @@ function validateCpf() {
   if (cpf.length < 14) {
     labelCpf.textContent = "CPF é inválido";
     labelCpf.style.color = "red";
+    validCpf = false;
   } else {
     labelCpf.textContent = "CPF válido";
     labelCpf.style.color = "green";
+    validCpf = true;
   }
 }
 cpfInput.addEventListener("input", validateCpf);
+
+// validação numero de celular
 
 const celularInput = document.getElementById("celular");
 const labelCelular = document.getElementById("labelCelular");
@@ -52,12 +157,16 @@ function validateCelular() {
   if (celular.length < 15) {
     labelCelular.textContent = "O número é inválido";
     labelCelular.style.color = "red";
+    validCelular = false;
   } else {
     labelCelular.textContent = "Número válido";
     labelCelular.style.color = "green";
+    validCelular = true;
   }
 }
 celularInput.addEventListener("input", validateCelular);
+
+// validação nome do usuário
 
 const usuarioInput = document.getElementById("usuario");
 const labelUsuario = document.getElementById("labelUsuario");
@@ -68,9 +177,11 @@ function validateUsername() {
   if (usuario.length < 6) {
     labelUsuario.textContent = "O usuário deve ter  6 caracteres";
     labelUsuario.style.color = "red";
+    validUsuario = false;
   } else {
     labelUsuario.textContent = "Nome de usuário válido";
     labelUsuario.style.color = "green";
+    validUsuario = true;
   }
 }
 
@@ -84,6 +195,8 @@ usuarioInput.addEventListener("keydown", function (event) {
     event.preventDefault();
   }
 });
+
+//validação senha e confirmar senha
 
 const passwordInput = document.getElementById("senha");
 const confirmPasswordInput = document.getElementById("confirmSenha");
@@ -105,11 +218,13 @@ function validatePasswords() {
       labelSenha.style.color = "green";
       labelConfirmSenha.textContent = "As senhas coincidem";
       labelConfirmSenha.style.color = "green";
+      validSenha = true;
     } else {
       labelSenha.textContent = "As senhas não coincidem";
       labelSenha.style.color = "red";
       labelConfirmSenha.textContent = "As senhas não coincidem";
       labelConfirmSenha.style.color = "red";
+      validSenha = false;
     }
   }
 }
@@ -126,3 +241,48 @@ function preventNumberInput(event) {
 
 passwordInput.addEventListener("keydown", preventNumberInput);
 confirmPasswordInput.addEventListener("keydown", preventNumberInput);
+
+function showModal(message) {
+  const modalMessage = document.getElementById("modalMessage");
+  modalMessage.innerText = message;
+
+  const myModal = new bootstrap.Modal(document.getElementById("myModal"));
+  myModal.show();
+}
+
+function cadastrar() {
+  if (
+    validCelular &&
+    validCpf &&
+    validFixo &&
+    validMae &&
+    validNome &&
+    validRua &&
+    validSenha &&
+    validUsuario
+  ) {
+    showModal("Tudo certo! Usuário cadastrado.");
+
+    // Recupera a lista de usuários do localStorage
+    let listaUser = JSON.parse(localStorage.getItem("listaUser") || "[]");
+
+    // Adiciona o novo usuário à lista
+    listaUser.push({
+      usuarioCad: usuarioInput.value,
+      senhaCad: passwordInput.value,
+    });
+
+    setTimeout(() => {
+      window.location.href = "/Login/login.html";
+    }, 5000);
+
+    // Salva a lista atualizada de usuários no localStorage
+    localStorage.setItem("listaUser", JSON.stringify(listaUser));
+  } else {
+    showModal("Algum item está incorreto ou vazio!");
+  }
+}
+
+/*function redirect() {
+  window.location.href = "/Login/login.html";
+}*/
