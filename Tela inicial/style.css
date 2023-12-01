@@ -5,8 +5,8 @@ body {
 
 /* NAVBAR */
 
-.nav-bar-fundo{
-  background-color: #fff;
+.nav-bar-fundo {
+  background-color: #f6f6f6;
 }
 
 #logo_navbar {
@@ -30,7 +30,7 @@ body {
   transition: 0.3s background-color;
 }
 
-.voltar_botao{
+.voltar_botao {
   text-decoration: none;
 }
 
@@ -355,7 +355,6 @@ body {
   margin-right: auto;
 }
 
-
 .card_texto_quem_usa {
   margin-bottom: 10px;
   font-size: 16px;
@@ -491,7 +490,7 @@ footer {
   padding-bottom: 5%;
 }
 
-.video{
+.video {
   margin-bottom: 20px;
   display: block;
   margin-left: auto;

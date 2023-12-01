@@ -19,6 +19,8 @@ let validCpf = false;
 let validCelular = false;
 let validUsuario = false;
 let validSenha = false;
+let validData = false;
+let validSexo = false;
 
 // Validação da Rua
 const ruaInput = document.getElementById("endereco");
@@ -196,6 +198,56 @@ usuarioInput.addEventListener("keydown", function (event) {
   }
 });
 
+function validarData(data) {
+  // Obtém a data atual
+  const dataAtual = new Date();
+
+  // Converte a data digitada para um objeto Date
+  const dataDigitada = new Date(data);
+
+  // Compara as duas datas
+  if (dataDigitada >= dataAtual) {
+    // Data inválida
+    validData = false;
+    return false;
+  } else {
+    validData = true;
+  }
+
+  // Data válida
+  return true;
+}
+
+// Obtém o elemento input
+const inputData = document.querySelector("#data");
+
+// Adiciona um evento de blur ao input
+inputData.addEventListener("blur", function () {
+  // Valida a data
+  const dataValida = validarData(inputData.value);
+
+  // Altera a cor da label
+  const labelData = document.querySelector("#label-data");
+  labelData.style.color = dataValida ? "green" : "red";
+});
+
+const labelSexo = document.querySelector("#sexo_titulo");
+
+// Adiciona um evento de click a todos os radio buttons
+const radioButtons = document.querySelectorAll("input[name='Sexo']");
+for (const radioButton of radioButtons) {
+  radioButton.addEventListener("click", function () {
+    // Verifica se algum radio button está selecionado
+    if (radioButton.checked) {
+      // Altera a cor da label para verde
+      labelSexo.style.color = "green";
+      validSexo = true;
+    } else {
+      validSexo = false;
+    }
+  });
+}
+
 //validação senha e confirmar senha
 
 const passwordInput = document.getElementById("senha");
@@ -259,7 +311,9 @@ function cadastrar() {
     validNome &&
     validRua &&
     validSenha &&
-    validUsuario
+    validUsuario &&
+    validData &&
+    validSexo
   ) {
     showModal("Tudo certo! Usuário cadastrado.");
 

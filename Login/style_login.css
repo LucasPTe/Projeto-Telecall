@@ -124,7 +124,7 @@ input[type="password"]:focus {
 }
 
 .login_botao {
-  margin-top: -20px;
+  margin-top: 20px;
   display: block;
   margin-left: auto;
   margin-right: auto;
