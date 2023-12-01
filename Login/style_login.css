@@ -139,3 +139,7 @@ input[type="password"]:focus {
   background-color: #0062a2;
   font-size: 18px;
 }
+
+.marg_btn {
+  margin-top: 10px;
+}
