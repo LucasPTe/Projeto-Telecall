@@ -15,7 +15,7 @@ body {
 
 .navbar-brand {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   padding: 0px;
 }
 
@@ -90,7 +90,7 @@ body {
 }
 
 .distancia_navbar {
-  padding-top: 150px;
+  padding-top: 175px;
 }
 
 /* LANDING PAGE */
