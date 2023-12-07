@@ -8,5 +8,10 @@
 
 - HTML para a criação e inserção de elementos na página
 - CSS para a estilização dos componentes
-- Bootstrap 5 para a configuraçãoo da responsividade
-- Javascript para implementação das funcionalidades da página
+- Bootstrap 5 para a configuração da responsividade
+- Javascript para implementação das funcionalidades da página:
+
++ LocalStorage para armazenamento dos dados cadastrais, e para fazer login com os dados informados.
++ Uso de LocalStorage para aplicação do modo escuro.
++ Validação de dados como CPF, Telefone celular.
++ Ferramentas de acessibilidade, para aumentar e diminuir a fonte utilizada no site.
