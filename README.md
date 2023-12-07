@@ -1,6 +1,6 @@
 # Criação do site Modavo.
 
-https://t147f2.p3cdn1.secureserver.net/wp-content/uploads/2023/07/modavo-1.png
+![logo modavo](https://t147f2.p3cdn1.secureserver.net/wp-content/uploads/2023/07/modavo-1.png)
 
 ## Desenvolvimento do website direcionado para o serviço Modavo
 
